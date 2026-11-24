@@ -32374,7 +32374,7 @@
   "reviewed_pairs": 0,
   "errors": [],
   "status": "review_pending",
-  "wall_seconds": 0.07020620000548661,
+  "wall_seconds": 0.04104909999296069,
   "release_decision": "hold_for_review",
   "note": "Pending semantic reviews are abstentions, not successful detections or clean rows."
 }

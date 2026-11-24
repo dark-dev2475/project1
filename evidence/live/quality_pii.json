@@ -1,0 +1,99 @@
+{
+  "fingerprint": "0054f1d41b90984714ce22dc926cd61c8a67164ccbcf7173cfbffa3895181af1",
+  "kind": "pii",
+  "model": "gemini-3.5-flash-lite",
+  "metric": {
+    "true_positive": 0,
+    "false_positive": 0,
+    "false_negative": 0,
+    "positive_units": 0,
+    "negative_units": 0,
+    "recall": null,
+    "precision": null,
+    "false_positive_rate": null,
+    "unit": "physical_row",
+    "status": "pending_provider",
+    "clean_false_alarms": 0,
+    "clean_units": 0,
+    "clean_false_alarm_rate": null,
+    "explanation_coverage": null,
+    "evaluated_units": 0,
+    "expected_review_units": 720,
+    "wall_seconds": 14.250401000026613,
+    "rows_processed": 0,
+    "rows_per_second": null,
+    "api_cost_usd_per_million_rows": null,
+    "compute_cost_usd_per_million_rows": null,
+    "injections": [
+      {
+        "requested": 0.05,
+        "modified_rows": 6,
+        "actual_modified_rate": 0.05,
+        "positive_units": 6
+      },
+      {
+        "requested": 0.15,
+        "modified_rows": 18,
+        "actual_modified_rate": 0.15,
+        "positive_units": 18
+      },
+      {
+        "requested": 0.3,
+        "modified_rows": 36,
+        "actual_modified_rate": 0.3,
+        "positive_units": 36
+      }
+    ],
+    "cost_basis": "Actual successful-call token usage at paid-equivalent rates; failed-call token usage unavailable. Free-tier actual charge assumed zero."
+  },
+  "usage": {
+    "model": "gemini-3.5-flash-lite",
+    "http_attempts": 1,
+    "successful_calls": 0,
+    "failed_calls": 1,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "paid_equivalent_usd": 0,
+    "free_tier_charge_usd": null,
+    "billing_note": "Assumes account is on free tier; failed-call token usage unavailable; paid equivalent excludes it."
+  },
+  "errors": [
+    {
+      "kind": "pii",
+      "case": 0,
+      "clean": false,
+      "error": "ModelUnavailable: Gemini HTTP 503: provider temporarily unavailable; try again later"
+    },
+    {
+      "kind": "pii",
+      "case": 0,
+      "clean": true,
+      "error": "ModelUnavailable: Gemini attempt budget exhausted (1)"
+    },
+    {
+      "kind": "pii",
+      "case": 1,
+      "clean": false,
+      "error": "ModelUnavailable: Gemini attempt budget exhausted (1)"
+    },
+    {
+      "kind": "pii",
+      "case": 1,
+      "clean": true,
+      "error": "ModelUnavailable: Gemini attempt budget exhausted (1)"
+    },
+    {
+      "kind": "pii",
+      "case": 2,
+      "clean": false,
+      "error": "ModelUnavailable: Gemini attempt budget exhausted (1)"
+    },
+    {
+      "kind": "pii",
+      "case": 2,
+      "clean": true,
+      "error": "ModelUnavailable: Gemini attempt budget exhausted (1)"
+    }
+  ],
+  "observations": []
+}

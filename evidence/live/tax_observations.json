@@ -1,0 +1,29 @@
+{
+  "fingerprint": "33b39104e6775bbf195bc287a9a260f8fa2672941588e4ef3ee57c894a18bd22",
+  "model": "gemini-3.5-flash-lite",
+  "cases": [
+    "TAX-0001",
+    "TAX-0488"
+  ],
+  "repetitions": 10,
+  "observations": [],
+  "errors": [
+    {
+      "case_id": "TAX-0001",
+      "repeat": 0,
+      "error": "Gemini HTTP 503: provider temporarily unavailable; try again later"
+    }
+  ],
+  "cache_policy": "Each repetition is a distinct live call. Resume replays only that exact recorded experiment slot.",
+  "last_run_usage": {
+    "model": "gemini-3.5-flash-lite",
+    "http_attempts": 1,
+    "successful_calls": 0,
+    "failed_calls": 1,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "paid_equivalent_usd": 0,
+    "free_tier_charge_usd": null,
+    "billing_note": "Assumes account is on free tier; failed-call token usage unavailable; paid equivalent excludes it."
+  }
+}

@@ -1,6 +1,6 @@
 # Project A: results and shipping decision
 
-Generated 2026-11-24T05:49:00.128837+00:00 by `python lab.py reproduce`. Source observations: `artifacts/tax_benchmark.json`.
+Generated 2026-11-24T19:08:34.123090+00:00 by `python lab.py reproduce`. Source observations: `artifacts/tax_benchmark.json`.
 
 ## Experimental contract
 
@@ -12,13 +12,13 @@ The annual input model accepts eligible salary-only claims; see `project_a/sourc
 
 | Implementation | Rupee-exact evidence | Determinism | p50 / p95, ms | Model cost / 1,000 | Auditability |
 |---|---|---|---|---|---|
-| Hand-coded policy | 976/976 (100.0%) | 488/488 profiles identical over 10 calls | 0.7061 / 0.8957 | $0 API; compute excluded | 100.0% structural clause-ledger coverage |
-| Gemini at query time | pending_provider | not measured fully repeated profiles | not measured / not measured | not measured paid equivalent | Model citations are not an arithmetic proof |
+| Hand-coded policy | 976/976 (100.0%) | 488/488 profiles identical over 10 calls | 0.3680 / 0.6620 | $0 API; compute excluded | 100.0% structural clause-ledger coverage |
+| Gemini at query time | partial | 0 fully repeated profiles | not measured / not measured | not measured paid equivalent | Model citations are not an arithmetic proof |
 | Gemini-compiled policy | pending_compilation | not measured | not measured / not measured | Zero query calls by design; compilation cost pending unless observed | Versioned JSON, schema validation, regression gate, explicit review |
 
 The handwritten policy is **not** counted as LLM-compiled. Live compilation produces a separate artifact
 with model/prompt/source hashes. Only a reviewed artifact can execute. Generated code is never evaluated.
-No Gemini API key was present for the initial build. Current model evidence status: **pending_provider**.
+No Gemini API key was present for the initial build. Current model evidence status: **partial**.
 Live accuracy, if available, uses only completed calls, alongside requested-call coverage; see the JSON.
 
 ## Independent official checks
@@ -47,7 +47,7 @@ This curated corpus tests a conservative grammar, not unrestricted language comp
 
 | Approach | Measured change work | What broke / silent failures | Outcome |
 |---|---|---|---|
-| Hand-coded policy | Replace year pack + validate: 0.000236 s; regression verification: 0.1586 s | Stale FY2024-25 new-regime pack caused 173/488 wrong outputs without exceptions | Updated pack: 488/488 exact |
+| Hand-coded policy | Replace year pack + validate: 0.000134 s; regression verification: 0.1230 s | Stale FY2024-25 new-regime pack caused 173/488 wrong outputs without exceptions | Updated pack: 488/488 exact |
 | Query-time Gemini | Live timing not yet measured | Source and fiscal year are in every prompt; stale prompt/model drift remains a risk | Both-year live protocol implemented, measurements pending credentials |
 | Gemini compiler | Live compilation/review timing not yet measured | Edited source invalidates the approved artifact hash | Schema + all-fixture regression gate; human clause review required |
 

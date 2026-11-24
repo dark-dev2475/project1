@@ -53,6 +53,23 @@ def test_unknown_model_price_is_unknown(monkeypatch):
     assert client.generate("test", system="test").paid_equivalent_usd is None
 
 
+def test_current_model_price_includes_thinking(monkeypatch):
+    monkeypatch.setattr("shared.gemini.load_local_env", lambda: None)
+    monkeypatch.delenv("GEMINI_INPUT_USD_PER_MILLION", raising=False)
+    monkeypatch.delenv("GEMINI_OUTPUT_USD_PER_MILLION", raising=False)
+    client = Gemini(api_key="test", model="gemini-3.5-flash-lite", min_interval=0, transport=lambda _: response())
+    assert client.generate("test", system="test").paid_equivalent_usd == pytest.approx(0.0000925)
+
+
+def test_invalid_provider_content_is_reported_as_failure():
+    value = response()
+    value["candidates"][0]["content"] = None
+    client = Gemini(api_key="test", min_interval=0, transport=lambda _: value)
+    with pytest.raises(ModelUnavailable, match="invalid JSON"):
+        client.generate("test", system="test")
+    assert client.usage()["failed_calls"] == 1
+
+
 def test_local_env_is_inert_and_does_not_override_existing_values(tmp_path,monkeypatch):
     from shared.gemini import load_local_env
     monkeypatch.setenv("GEMINI_MODEL","explicit-model")

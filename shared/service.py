@@ -66,7 +66,7 @@ class Handler(BaseHTTPRequestHandler):
             if target is None:
                 return self._send(204, b"")
             filename, mime = target
-        elif path in {"/RESULTS_A.md", "/RESULTS_B.md", "/DECISION_MATRIX.md", "/AI_USAGE.md", "/README.md",
+        elif path in {"/RESULTS_A.md", "/RESULTS_B.md", "/DECISION_MATRIX.md", "/README.md",
                       "/evidence/official_calculator/README.md", "/docs/contracts/orders.json",
                       "/artifacts/summary.json", "/artifacts/tax_benchmark.json", "/artifacts/data_quality_benchmark.json"}:
             filename = path.lstrip("/")

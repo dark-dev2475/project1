@@ -19,10 +19,10 @@
     "deterministic_fraction": 1.0,
     "request_definition": "one validated profile compared under both regimes; config loaded once, validated on each calculation",
     "requests_measured": 4880,
-    "latency_ms_mean": 0.7051943027467819,
-    "latency_ms_p50": 0.7061499927658588,
-    "latency_ms_p95": 0.8956999517977238,
-    "measured_loop_seconds": 4.000431100022979,
+    "latency_ms_mean": 0.39822209046029516,
+    "latency_ms_p50": 0.36800000816583633,
+    "latency_ms_p95": 0.6619999767281115,
+    "measured_loop_seconds": 2.283620800008066,
     "model_calls": 0,
     "model_cost_usd_per_1000_requests": 0,
     "cost_scope": "Model/API cost only; hosting, engineering and legal review excluded.",
@@ -100,8 +100,8 @@
         }
       ]
     },
-    "config_replace_and_validate_seconds": 0.00023550004698336124,
-    "verification_seconds": 0.15860500000417233,
+    "config_replace_and_validate_seconds": 0.0001336000277660787,
+    "verification_seconds": 0.1230257999850437,
     "after_update": {
       "checked": 488,
       "exact": 488,
@@ -257,8 +257,32 @@
     }
   ],
   "llm_query_time": {
-    "status": "pending_provider",
-    "reason": "No Gemini observations recorded; configure GEMINI_API_KEY"
+    "status": "partial",
+    "model": "gemini-3.5-flash-lite",
+    "requested_calls": 20,
+    "completed_calls": 0,
+    "coverage": 0.0,
+    "regime_answers": 0,
+    "exact": 0,
+    "accuracy_on_completed": null,
+    "complete_repeatability_profiles": 0,
+    "deterministic_profiles": 0,
+    "determinism_scope": "Old/new tax totals only; free-form model explanations may differ",
+    "latency_ms_p50": null,
+    "latency_ms_p95": null,
+    "paid_equivalent_usd_per_1000": null,
+    "free_tier_model_charge_usd": null,
+    "cost_scope": "Paid-equivalent mean for completed valid responses; invalid/failed attempts are separate and may have unavailable token usage",
+    "by_fiscal_year": {},
+    "errors": [
+      {
+        "case_id": "TAX-0001",
+        "repeat": 0,
+        "error": "Gemini HTTP 503: provider temporarily unavailable; try again later"
+      }
+    ],
+    "auditability": "Model cites clauses; no verified arithmetic ledger. Citation presence is not legal correctness.",
+    "change_measurement": "Both year packs evaluated against expected fixtures; live edit/recompile engineering time not measured."
   },
   "llm_compiled": {
     "status": "pending_compilation",

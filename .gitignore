@@ -8,5 +8,10 @@ __pycache__/
 !.env.example
 tmp/
 evidence/cache/
-evidence/live/
+evidence/live/*
+!evidence/live/tax_observations.json
+!evidence/live/quality_pii.json
 *.log
+.streamlit/secrets.toml
+reports/preview*.png
+artifacts/browser_checks.json

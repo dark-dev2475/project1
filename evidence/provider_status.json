@@ -1,0 +1,25 @@
+{
+  "checked_on": "2026-11-25",
+  "credential_loaded": true,
+  "models_listing_succeeded": true,
+  "generation_checks": [
+    {
+      "model": "gemini-2.5-flash-lite",
+      "http_status": 404,
+      "reason": "Provider reports this model is no longer available to new users and recommends gemini-3.5-flash-lite."
+    },
+    {
+      "model": "gemini-3.1-flash-lite",
+      "http_status": 503,
+      "reason": "Provider reports temporary high demand."
+    },
+    {
+      "model": "gemini-3.5-flash-lite",
+      "http_status": 503,
+      "reason": "Provider temporarily unavailable during query, compilation and data-quality attempts."
+    }
+  ],
+  "selected_model": "gemini-3.5-flash-lite",
+  "successful_generation_calls": 0,
+  "next_action": "Retry the bounded live experiments after provider recovery; no automatic background retries."
+}

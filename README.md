@@ -5,6 +5,16 @@ a 12-problem NYC 311 quality experiment, and reusable validation for other tabul
 The focus is evidence: exact amounts, explicit uncertainty, source provenance, real measurements,
 and visible missing results. Runtime code uses the Python standard library.
 
+## Streamlit app
+
+```sh
+python -m pip install -r requirements.txt
+python -m streamlit run streamlit_app.py
+```
+
+Deploy `streamlit_app.py` from the `main` branch of `dark-dev2475/project1`.
+See [deployment and secrets setup](docs/DEPLOYMENT.md). No model calls run automatically on page load.
+
 ## Run it
 
 Requires **Python 3.10+** and **Node.js 18+** (only to replay the official calculator).
@@ -50,8 +60,10 @@ especially annual HRA assumptions, loan conditions, and excluded income heads.
 
 ## Real Gemini experiments
 
-The configured model is **`gemini-2.5-flash-lite`**, overrideable with `GEMINI_MODEL`. The initial build
-had no Gemini credentials. Pending cells are not model failures or synthetic results. The three
+The configured model is **`gemini-3.5-flash-lite`**, overrideable with `GEMINI_MODEL`. The initial build
+had no Gemini credentials. On 2026-11-25, the configured account rejected 2.5 Flash-Lite;
+3.5 Flash-Lite was selected explicitly and returned HTTP 503. Recorded attempts remain failed
+and completed model coverage is zero. Pending cells are not synthetic results. The three
 implementations are separate: hand-coded JSON policy, query-time Gemini arithmetic, and Gemini
 compilation into a separately reviewed JSON policy interpreted by the deterministic kernel.
 
@@ -61,7 +73,7 @@ Never commit the key or paste it into a report.
 
 ```powershell
 $env:GEMINI_API_KEY = "your-key"
-$env:GEMINI_MODEL = "gemini-2.5-flash-lite"
+$env:GEMINI_MODEL = "gemini-3.5-flash-lite"
 $env:GEMINI_MIN_INTERVAL = "6"
 python lab.py tax --input examples/tax.json --implementation llm
 python lab.py compile-policy
@@ -101,11 +113,10 @@ shared/         bounded Gemini client, experiment recorder, reporting, local HTT
 tests/          independent tax oracle, persisted expectations, language and detector tests
 evidence/       authentic official calculator, provenance, optional model artifacts
 artifacts/      generated measurements, test results, source findings
-docs/           plan, architecture, contracts, portability and interview guide
+docs/           architecture, contracts, portability and interview guide
 ```
 
-See [RESULTS_A](RESULTS_A.md), [RESULTS_B](RESULTS_B.md), [decision matrix](DECISION_MATRIX.md), and
-[AI usage](AI_USAGE.md). The final design sections are kept within a two-page prose budget per project.
+See [RESULTS_A](RESULTS_A.md), [RESULTS_B](RESULTS_B.md), and [decision matrix](DECISION_MATRIX.md). The final design sections are kept within a two-page prose budget per project.
 
 ## HTTP interface
 
@@ -124,4 +135,4 @@ Gemini observations, a reviewed model-compiled policy, and a measured live law-c
 The supplied NYC sample is deliberately small and biased; broaden it and label real semantic cases
 before claiming production detection quality. The two official calculator disagreements need reviewer
 attention. Create/share a private GitHub repo with the hiring team's account once those details are
-known; this workspace has not been published or shared with anyone.
+known. The public app can be deployed from the configured GitHub repository.

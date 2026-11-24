@@ -1,6 +1,6 @@
 # Project B: results and scale design
 
-Generated 2026-11-24T05:49:00.128837+00:00. Reproduce with `python lab.py reproduce`.
+Generated 2026-11-24T19:08:34.123090+00:00. Reproduce with `python lab.py reproduce`.
 
 ## Dataset and experimental contract
 
@@ -14,53 +14,53 @@ Schema/type/date-format/null-spike score per batch; other types score per physic
 
 | Check | Family | Unit | Recall | Precision | Clean false alarms | Rows/s | API $/M rows | Explained alerts |
 |---|---|---|---|---|---|---|---|---|
-| schema | rule | batch | 100.0% | 100.0% | 0/3 (0.0%) | 31,131 | 0.0000 | 100.0% |
-| schema | statistical | batch | 100.0% | 100.0% | 0/3 (0.0%) | 52,725 | 0.0000 | 100.0% |
-| schema | hybrid | batch | 100.0% | 100.0% | 0/3 (0.0%) | 20,851 | 0.0000 | 100.0% |
+| schema | rule | batch | 100.0% | 100.0% | 0/3 (0.0%) | 63,212 | 0.0000 | 100.0% |
+| schema | statistical | batch | 100.0% | 100.0% | 0/3 (0.0%) | 101,188 | 0.0000 | 100.0% |
+| schema | hybrid | batch | 100.0% | 100.0% | 0/3 (0.0%) | 38,768 | 0.0000 | 100.0% |
 | schema | llm | batch | not measured | not measured | 0/0 (not measured) | not measured | not measured | not measured |
-| type | rule | batch | 100.0% | 100.0% | 0/3 (0.0%) | 34,633 | 0.0000 | 100.0% |
-| type | statistical | batch | 100.0% | 100.0% | 0/3 (0.0%) | 53,325 | 0.0000 | 100.0% |
-| type | hybrid | batch | 100.0% | 100.0% | 0/3 (0.0%) | 21,343 | 0.0000 | 100.0% |
+| type | rule | batch | 100.0% | 100.0% | 0/3 (0.0%) | 69,580 | 0.0000 | 100.0% |
+| type | statistical | batch | 100.0% | 100.0% | 0/3 (0.0%) | 111,462 | 0.0000 | 100.0% |
+| type | hybrid | batch | 100.0% | 100.0% | 0/3 (0.0%) | 42,207 | 0.0000 | 100.0% |
 | type | llm | batch | not measured | not measured | 0/0 (not measured) | not measured | not measured | not measured |
-| date_format | rule | batch | 100.0% | 100.0% | 0/3 (0.0%) | 34,450 | 0.0000 | 100.0% |
-| date_format | statistical | batch | 100.0% | 100.0% | 0/3 (0.0%) | 54,853 | 0.0000 | 100.0% |
-| date_format | hybrid | batch | 100.0% | 100.0% | 0/3 (0.0%) | 20,881 | 0.0000 | 100.0% |
+| date_format | rule | batch | 100.0% | 100.0% | 0/3 (0.0%) | 68,232 | 0.0000 | 100.0% |
+| date_format | statistical | batch | 100.0% | 100.0% | 0/3 (0.0%) | 106,701 | 0.0000 | 100.0% |
+| date_format | hybrid | batch | 100.0% | 100.0% | 0/3 (0.0%) | 42,399 | 0.0000 | 100.0% |
 | date_format | llm | batch | not measured | not measured | 0/0 (not measured) | not measured | not measured | not measured |
-| coordinates | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 34,264 | 0.0000 | 100.0% |
-| coordinates | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 53,937 | 0.0000 | 100.0% |
-| coordinates | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 18,387 | 0.0000 | 100.0% |
+| coordinates | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 67,865 | 0.0000 | 100.0% |
+| coordinates | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 109,857 | 0.0000 | 100.0% |
+| coordinates | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 41,862 | 0.0000 | 100.0% |
 | coordinates | llm | physical_row | not measured | not measured | 0/0 (not measured) | not measured | not measured | not measured |
-| duplicates | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 35,539 | 0.0000 | 100.0% |
-| duplicates | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 52,381 | 0.0000 | 100.0% |
-| duplicates | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 23,070 | 0.0000 | 100.0% |
+| duplicates | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 68,715 | 0.0000 | 100.0% |
+| duplicates | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 105,637 | 0.0000 | 100.0% |
+| duplicates | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 41,107 | 0.0000 | 100.0% |
 | duplicates | llm | physical_row | not measured | not measured | 0/0 (not measured) | not measured | not measured | not measured |
-| near_duplicates | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 42,615 | 0.0000 | 100.0% |
-| near_duplicates | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 47,666 | 0.0000 | 100.0% |
-| near_duplicates | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 21,552 | 0.0000 | 100.0% |
+| near_duplicates | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 65,908 | 0.0000 | 100.0% |
+| near_duplicates | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 96,891 | 0.0000 | 100.0% |
+| near_duplicates | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 40,352 | 0.0000 | 100.0% |
 | near_duplicates | llm | physical_row | not measured | not measured | 0/0 (not measured) | not measured | not measured | not measured |
-| null_spike | rule | batch | 100.0% | 100.0% | 0/3 (0.0%) | 42,450 | 0.0000 | 100.0% |
-| null_spike | statistical | batch | 100.0% | 100.0% | 0/3 (0.0%) | 58,718 | 0.0000 | 100.0% |
-| null_spike | hybrid | batch | 100.0% | 100.0% | 0/3 (0.0%) | 22,810 | 0.0000 | 100.0% |
+| null_spike | rule | batch | 100.0% | 100.0% | 0/3 (0.0%) | 66,311 | 0.0000 | 100.0% |
+| null_spike | statistical | batch | 100.0% | 100.0% | 0/3 (0.0%) | 112,620 | 0.0000 | 100.0% |
+| null_spike | hybrid | batch | 100.0% | 100.0% | 0/3 (0.0%) | 43,682 | 0.0000 | 100.0% |
 | null_spike | llm | batch | not measured | not measured | 0/0 (not measured) | not measured | not measured | not measured |
-| chronology | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 31,423 | 0.0000 | 100.0% |
-| chronology | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 50,612 | 0.0000 | 100.0% |
-| chronology | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 20,745 | 0.0000 | 100.0% |
+| chronology | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 69,857 | 0.0000 | 100.0% |
+| chronology | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 112,872 | 0.0000 | 100.0% |
+| chronology | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 43,291 | 0.0000 | 100.0% |
 | chronology | llm | physical_row | not measured | not measured | 0/0 (not measured) | not measured | not measured | not measured |
-| zip_borough | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 34,617 | 0.0000 | 100.0% |
-| zip_borough | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 56,179 | 0.0000 | 100.0% |
-| zip_borough | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 21,194 | 0.0000 | 100.0% |
+| zip_borough | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 69,715 | 0.0000 | 100.0% |
+| zip_borough | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 113,875 | 0.0000 | 100.0% |
+| zip_borough | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 42,834 | 0.0000 | 100.0% |
 | zip_borough | llm | physical_row | not measured | not measured | 0/0 (not measured) | not measured | not measured | not measured |
-| complaint_descriptor | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 34,606 | 0.0000 | 100.0% |
-| complaint_descriptor | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 51,508 | 0.0000 | 100.0% |
-| complaint_descriptor | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 21,890 | 0.0000 | 100.0% |
+| complaint_descriptor | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 56,210 | 0.0000 | 100.0% |
+| complaint_descriptor | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 98,225 | 0.0000 | 100.0% |
+| complaint_descriptor | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 42,510 | 0.0000 | 100.0% |
 | complaint_descriptor | llm | physical_row | not measured | not measured | 0/0 (not measured) | not measured | not measured | not measured |
-| resolution_status | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 35,899 | 0.0000 | 100.0% |
-| resolution_status | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 50,515 | 0.0000 | 100.0% |
-| resolution_status | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 20,389 | 0.0000 | 100.0% |
+| resolution_status | rule | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 69,459 | 0.0000 | 100.0% |
+| resolution_status | statistical | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 113,051 | 0.0000 | 100.0% |
+| resolution_status | hybrid | physical_row | 100.0% | 100.0% | 0/360 (0.0%) | 42,833 | 0.0000 | 100.0% |
 | resolution_status | llm | physical_row | not measured | not measured | 0/0 (not measured) | not measured | not measured | not measured |
-| pii | rule | physical_row | 76.7% | 100.0% | 0/360 (0.0%) | 32,052 | 0.0000 | 100.0% |
-| pii | statistical | physical_row | 100.0% | 61.2% | 45/360 (12.5%) | 59,602 | 0.0000 | 100.0% |
-| pii | hybrid | physical_row | 100.0% | 61.2% | 45/360 (12.5%) | 19,992 | 0.0000 | 100.0% |
+| pii | rule | physical_row | 76.7% | 100.0% | 0/360 (0.0%) | 69,683 | 0.0000 | 100.0% |
+| pii | statistical | physical_row | 100.0% | 61.2% | 45/360 (12.5%) | 105,493 | 0.0000 | 100.0% |
+| pii | hybrid | physical_row | 100.0% | 61.2% | 45/360 (12.5%) | 41,312 | 0.0000 | 100.0% |
 | pii | llm | physical_row | not measured | not measured | 0/0 (not measured) | not measured | not measured | not measured |
 
 Rule/statistical/hybrid rows measure the full detector pass on that corruption scenario, not the isolated cost of one rule. Local CPU/hosting cost is excluded from $0 API figures. Hybrid table values measure candidate detection; pending semantic review is not confirmed detection. LLM cells remain unmeasured when no provider is available. Partial live coverage is reported in machine-readable observations.
@@ -84,7 +84,7 @@ Exact examples and original values are in `artifacts/data_quality_benchmark.json
 
 ## End-to-end hybrid run
 
-On 900 held-out real rows: 0 hard contract alerts, 148 semantic candidate pairs over 102 distinct rows, 11 rows selected for random audit, 0 reviewed pairs, 148 pending pairs. Release decision: **hold_for_review**. Wall time: 0.0702 seconds. These are observed alerts, not adjudicated accuracy.
+On 900 held-out real rows: 0 hard contract alerts, 148 semantic candidate pairs over 102 distinct rows, 11 rows selected for random audit, 0 reviewed pairs, 148 pending pairs. Release decision: **hold_for_review**. Wall time: 0.0410 seconds. These are observed alerts, not adjudicated accuracy.
 
 Rules run for every row; empirical null-drift and candidate checks run per batch. Hard contract failures quarantine the batch. Ambiguous ZIP/category/text/near-duplicate findings enter a bounded review queue; random sampling checks unflagged rows. No provider or budget exhaustion leaves a hold, not a false all-clear. The public/synthetic Gemini adapter redacts email/phone patterns; generic customer datasets are never automatically sent to it.
 
@@ -94,7 +94,7 @@ Rules run for every row; empirical null-drift and candidate checks run per batch
 
 ## Scale design (two-page budget; under 600 words)
 
-At 50 million rows/day, average ingest is 578.7 rows/s across 120 customers (416,667 rows/customer/day if evenly distributed). A 4x peak assumption implies 2,315 rows/s. The measured in-process hybrid candidate detector processes 21,023 rows/s; naive linear CPU projection is 2,378 seconds/day. This is a lower-bound projection, not a distributed benchmark. It excludes parsing, network, storage, skew and semantic review.
+At 50 million rows/day, average ingest is 578.7 rows/s across 120 customers (416,667 rows/customer/day if evenly distributed). A 4x peak assumption implies 2,315 rows/s. The measured in-process hybrid candidate detector processes 41,887 rows/s; naive linear CPU projection is 1,194 seconds/day. This is a lower-bound projection, not a distributed benchmark. It excludes parsing, network, storage, skew and semantic review.
 
 Use a versioned contract per customer, a schema registry, and partitioned ingestion. Run cheap schema/type/chronology checks before aggregation; quarantine violations with row IDs, rule version and evidence. Baselines belong to a tenant and agency/partition, with minimum sample sizes and explicit seasonality. New schema versions run in shadow mode before adoption. Never fit a baseline on the batch being judged.
 

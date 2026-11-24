@@ -54,7 +54,7 @@ class Gemini:
     """No hidden retries/caches in repeatability experiments; budget counts HTTP attempts.
 
     Price is a configurable *paid equivalent*, not a free-tier charge. Default rates are
-    known only for gemini-2.5-flash-lite, checked at ai.google.dev/gemini-api/docs/pricing.
+    versioned below, checked at ai.google.dev/gemini-api/docs/pricing on 2026-11-25.
     Model changes produce unknown costs unless explicit prices are supplied.
     """
 
@@ -70,7 +70,7 @@ class Gemini:
     ):
         load_local_env()
         self._api_key = api_key or os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
-        self.model = model or os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite")
+        self.model = model or os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
         if not re.fullmatch(r"[a-zA-Z0-9._-]+", self.model):
             raise ValueError("Invalid Gemini model identifier")
         self.max_calls = max_calls if max_calls is not None else int(os.getenv("GEMINI_MAX_CALLS", "40"))
@@ -100,7 +100,10 @@ class Gemini:
                 return json.load(response)
         except HTTPError as exc:
             # Do not retain response bodies, request headers, or keys in exception logs.
-            raise ModelUnavailable(f"Gemini HTTP {exc.code}; check model availability or quota") from None
+            explanation = {400: "invalid request or API key", 401: "invalid credentials", 403: "access denied",
+                           404: "model unavailable for this project", 429: "quota or rate limit reached",
+                           503: "provider temporarily unavailable; try again later"}.get(exc.code, "provider request failed")
+            raise ModelUnavailable(f"Gemini HTTP {exc.code}: {explanation}") from None
         except (URLError, TimeoutError, OSError):
             raise ModelUnavailable("Gemini network request failed or timed out") from None
 
@@ -131,7 +134,10 @@ class Gemini:
             candidates = response.get("candidates", [])
             if not isinstance(candidates, list) or not candidates or not isinstance(candidates[0], dict) or candidates[0].get("finishReason") != "STOP":
                 raise ModelUnavailable("Gemini returned no complete answer (blocked or truncated)")
-            parts = candidates[0].get("content", {}).get("parts", [])
+            content = candidates[0].get("content", {})
+            if not isinstance(content, dict):
+                raise ValueError("Invalid response content")
+            parts = content.get("parts", [])
             if not isinstance(parts,list) or any(not isinstance(part,dict) for part in parts):
                 raise ValueError("Invalid response parts")
             answer = "".join(part.get("text", "") for part in parts if not part.get("thought"))
@@ -140,8 +146,8 @@ class Gemini:
             input_tokens = int(usage.get("promptTokenCount", 0))
             output_tokens = int(usage.get("candidatesTokenCount", 0))
             thinking_tokens = int(usage.get("thoughtsTokenCount", 0))
-            default_in = "0.10" if self.model == "gemini-2.5-flash-lite" else None
-            default_out = "0.40" if self.model == "gemini-2.5-flash-lite" else None
+            rates = {"gemini-2.5-flash-lite": ("0.10", "0.40"), "gemini-3.5-flash-lite": ("0.30", "2.50")}
+            default_in, default_out = rates.get(self.model, (None, None))
             price_in = os.getenv("GEMINI_INPUT_USD_PER_MILLION", default_in)
             price_out = os.getenv("GEMINI_OUTPUT_USD_PER_MILLION", default_out)
             cost = None if price_in is None or price_out is None else (
