@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rules-vs-llms-lab"
+version = "0.1.0"
+description = "An evidence-first comparison of deterministic rules, statistics, and Gemini"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[project.scripts]
+decision-lab = "lab:main"
+
+[tool.setuptools]
+py-modules = ["lab"]
+
+[tool.setuptools.packages.find]
+include = ["project_a*", "project_b*", "shared*"]
+
+[tool.setuptools.package-data]
+project_a = ["*.json", "*.md", "policies/*.json", "fixtures/*.json"]
+project_b = ["data/*.json", "data/*.jsonl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

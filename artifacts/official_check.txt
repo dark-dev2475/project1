@@ -1,0 +1,19 @@
+Official JavaScript replay: 140/140 exact output matches
+Project A vs official calculator: 138/140 exact matches; 2 documented upstream discrepancies; 0 unexpected mismatches
+Documented differences (see evidence/official_calculator/known_discrepancies.json):
+[
+  {
+    "id": "2024-25-old-50001000",
+    "official_total_raw": 21105277,
+    "official_BalTax": 21105280,
+    "project_total": 19257290.0,
+    "project_taxable_income": 50001000.0
+  },
+  {
+    "id": "2025-26-old-50001000",
+    "official_total_raw": 21105277,
+    "official_BalTax": 21105280,
+    "project_total": 19257290.0,
+    "project_taxable_income": 50001000.0
+  }
+]

@@ -1,0 +1,278 @@
+{
+  "fixture_provenance": {
+    "kind": "independent_engineering_oracle",
+    "official_calculator_validated": false,
+    "source": "project_a/source_rules.md",
+    "generator": "tests/tax_oracle.py",
+    "method": "Manually transcribed positive-part slope formulas; no production code/config imports."
+  },
+  "profiles": 488,
+  "regime_expectations": 976,
+  "hand_coded": {
+    "checked": 976,
+    "exact": 976,
+    "accuracy": 1.0,
+    "wrong_answers_without_exception": 0,
+    "failure_examples": [],
+    "repetitions_per_profile": 10,
+    "deterministic_profiles": 488,
+    "deterministic_fraction": 1.0,
+    "request_definition": "one validated profile compared under both regimes; config loaded once, validated on each calculation",
+    "requests_measured": 4880,
+    "latency_ms_mean": 0.7051943027467819,
+    "latency_ms_p50": 0.7061499927658588,
+    "latency_ms_p95": 0.8956999517977238,
+    "measured_loop_seconds": 4.000431100022979,
+    "model_calls": 0,
+    "model_cost_usd_per_1000_requests": 0,
+    "cost_scope": "Model/API cost only; hosting, engineering and legal review excluded.",
+    "clause_ledger_covered_results": 976,
+    "clause_ledger_coverage_fraction": 1.0,
+    "audit_measurement": "Every ledger entry has a clause and explanation and the final amount equals total tax; this is a structural auditability measure, not proof of statutory correctness."
+  },
+  "law_change_replay": {
+    "measurement_kind": "measured config migration replay; not historical implementation time",
+    "before_update": {
+      "checked": 488,
+      "exact": 315,
+      "accuracy": 0.6454918032786885,
+      "wrong_answers_without_exception": 173,
+      "failure_examples": [
+        {
+          "case_id": "TAX-0275",
+          "regime": "new",
+          "expected": 0,
+          "actual": 28600.0
+        },
+        {
+          "case_id": "TAX-0276",
+          "regime": "new",
+          "expected": 0,
+          "actual": 28600.0
+        },
+        {
+          "case_id": "TAX-0277",
+          "regime": "new",
+          "expected": 0,
+          "actual": 28600.0
+        },
+        {
+          "case_id": "TAX-0278",
+          "regime": "new",
+          "expected": 0,
+          "actual": 28600.0
+        },
+        {
+          "case_id": "TAX-0279",
+          "regime": "new",
+          "expected": 0,
+          "actual": 28600.0
+        },
+        {
+          "case_id": "TAX-0280",
+          "regime": "new",
+          "expected": 0,
+          "actual": 49400.0
+        },
+        {
+          "case_id": "TAX-0281",
+          "regime": "new",
+          "expected": 0,
+          "actual": 49400.0
+        },
+        {
+          "case_id": "TAX-0282",
+          "regime": "new",
+          "expected": 0,
+          "actual": 49400.0
+        },
+        {
+          "case_id": "TAX-0283",
+          "regime": "new",
+          "expected": 0,
+          "actual": 49400.0
+        },
+        {
+          "case_id": "TAX-0284",
+          "regime": "new",
+          "expected": 0,
+          "actual": 49400.0
+        }
+      ]
+    },
+    "config_replace_and_validate_seconds": 0.00023550004698336124,
+    "verification_seconds": 0.15860500000417233,
+    "after_update": {
+      "checked": 488,
+      "exact": 488,
+      "accuracy": 1.0,
+      "wrong_answers_without_exception": 0,
+      "failure_examples": []
+    },
+    "changed_config_fields": [
+      "new.slabs",
+      "new.rebate_threshold",
+      "new.rebate_max"
+    ],
+    "what_broke": "Reusing FY2024-25 new-regime rules for FY2025-26 returns plausible but incorrect taxes; fixture comparisons expose these silent errors."
+  },
+  "mutation_checks": [
+    {
+      "mutation": "disable_new_regime_rebate_marginal_relief",
+      "checked": 976,
+      "exact": 956,
+      "accuracy": 0.9795081967213115,
+      "wrong_answers_without_exception": 20,
+      "failure_examples": [
+        {
+          "case_id": "TAX-0290",
+          "regime": "new",
+          "expected": 41290,
+          "actual": 68590.0
+        },
+        {
+          "case_id": "TAX-0291",
+          "regime": "new",
+          "expected": 41300,
+          "actual": 68590.0
+        },
+        {
+          "case_id": "TAX-0292",
+          "regime": "new",
+          "expected": 41300,
+          "actual": 68590.0
+        },
+        {
+          "case_id": "TAX-0293",
+          "regime": "new",
+          "expected": 41300,
+          "actual": 68590.0
+        },
+        {
+          "case_id": "TAX-0294",
+          "regime": "new",
+          "expected": 41310,
+          "actual": 68600.0
+        },
+        {
+          "case_id": "TAX-0295",
+          "regime": "new",
+          "expected": 47400,
+          "actual": 69510.0
+        },
+        {
+          "case_id": "TAX-0296",
+          "regime": "new",
+          "expected": 47410,
+          "actual": 69510.0
+        },
+        {
+          "case_id": "TAX-0297",
+          "regime": "new",
+          "expected": 47410,
+          "actual": 69510.0
+        },
+        {
+          "case_id": "TAX-0298",
+          "regime": "new",
+          "expected": 47410,
+          "actual": 69510.0
+        },
+        {
+          "case_id": "TAX-0299",
+          "regime": "new",
+          "expected": 47420,
+          "actual": 69510.0
+        }
+      ]
+    },
+    {
+      "mutation": "change_cess_from_four_to_five_percent",
+      "checked": 976,
+      "exact": 280,
+      "accuracy": 0.28688524590163933,
+      "wrong_answers_without_exception": 696,
+      "failure_examples": [
+        {
+          "case_id": "TAX-0025",
+          "regime": "old",
+          "expected": 13000,
+          "actual": 13130.0
+        },
+        {
+          "case_id": "TAX-0026",
+          "regime": "old",
+          "expected": 54600,
+          "actual": 55120.0
+        },
+        {
+          "case_id": "TAX-0027",
+          "regime": "old",
+          "expected": 54600,
+          "actual": 55130.0
+        },
+        {
+          "case_id": "TAX-0028",
+          "regime": "old",
+          "expected": 54600,
+          "actual": 55130.0
+        },
+        {
+          "case_id": "TAX-0029",
+          "regime": "old",
+          "expected": 54600,
+          "actual": 55130.0
+        },
+        {
+          "case_id": "TAX-0030",
+          "regime": "old",
+          "expected": 54600,
+          "actual": 55130.0
+        },
+        {
+          "case_id": "TAX-0031",
+          "regime": "old",
+          "expected": 75400,
+          "actual": 76120.0
+        },
+        {
+          "case_id": "TAX-0031",
+          "regime": "new",
+          "expected": 28600,
+          "actual": 28870.0
+        },
+        {
+          "case_id": "TAX-0032",
+          "regime": "old",
+          "expected": 75400,
+          "actual": 76130.0
+        },
+        {
+          "case_id": "TAX-0032",
+          "regime": "new",
+          "expected": 28600,
+          "actual": 28880.0
+        }
+      ]
+    }
+  ],
+  "llm_query_time": {
+    "status": "pending_provider",
+    "reason": "No Gemini observations recorded; configure GEMINI_API_KEY"
+  },
+  "llm_compiled": {
+    "status": "pending_compilation",
+    "reason": "No reviewed Gemini-compiled policy artifact exists"
+  },
+  "parser": {
+    "cases": 50,
+    "correct": 50,
+    "ready": 25
+  },
+  "official_reference": {
+    "cases": 140,
+    "exact": 138,
+    "documented_discrepancies": 2,
+    "method": "Local execution of authentic, hash-pinned ITD JavaScript; not browser entries"
+  }
+}

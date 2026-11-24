@@ -1,0 +1,25 @@
+name: Reproduce evidence
+on: [push, pull_request]
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install -e '.[dev]'
+      - run: python -m ruff check .
+      - run: python lab.py reproduce
+      - uses: actions/upload-artifact@v4
+        with:
+          name: evidence
+          path: |
+            artifacts/
+            reports/
+            RESULTS_A.md
+            RESULTS_B.md
+            DECISION_MATRIX.md

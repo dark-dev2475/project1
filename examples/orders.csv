@@ -1,0 +1,4 @@
+order_id,amount,country,currency,placed_at,shipped_at,status,notes
+ORD-001,1200,IN,INR,2023-08-01,2023-08-02,shipped,Delivered
+ORD-002,50,US,USD,2023-08-01,,paid,Awaiting shipment
+ORD-002,not-a-number,JP,USD,2023-08-03,2023-08-01,shipped,Check this order

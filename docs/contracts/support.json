@@ -1,0 +1,14 @@
+{
+  "name": "Support tickets",
+  "columns": {
+    "ticket": {"type": "integer"},
+    "opened": {"type": "datetime"},
+    "resolved": {"type": "datetime", "nullable": true},
+    "priority": {"type": "string"},
+    "message": {"type": "string"}
+  },
+  "primary_key": "ticket",
+  "chronological_pair": ["opened", "resolved"],
+  "categories": {"priority": ["low", "normal", "high"]},
+  "text_columns": ["message"]
+}

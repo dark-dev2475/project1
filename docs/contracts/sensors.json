@@ -1,0 +1,13 @@
+{
+  "name": "Global sensor readings",
+  "columns": {
+    "device": {"type": "string"},
+    "timestamp": {"type": "datetime"},
+    "north": {"type": "number"},
+    "east": {"type": "number"},
+    "temperature": {"type": "number", "nullable": true}
+  },
+  "primary_key": ["device", "timestamp"],
+  "coordinate_pair": {"latitude": "north", "longitude": "east"},
+  "null_drift_threshold": 0.2
+}

@@ -1,0 +1,91 @@
+{
+  "contract": "Orders example \u2014 customize before use",
+  "row_count": 3,
+  "baseline_row_count": null,
+  "alert_count": 4,
+  "alerts": [
+    {
+      "code": "type_mismatch",
+      "row_index": 2,
+      "columns": [
+        "amount"
+      ],
+      "detector": "rule",
+      "message": "Expected number; received str"
+    },
+    {
+      "code": "duplicate_primary_key",
+      "row_index": 2,
+      "columns": [
+        "order_id"
+      ],
+      "detector": "rule",
+      "message": "Primary key repeats an earlier physical record",
+      "first_row_index": 1
+    },
+    {
+      "code": "chronology",
+      "row_index": 2,
+      "columns": [
+        "placed_at",
+        "shipped_at"
+      ],
+      "detector": "rule",
+      "message": "End time precedes start time"
+    },
+    {
+      "code": "pair_mapping",
+      "row_index": 2,
+      "columns": [
+        "country",
+        "currency"
+      ],
+      "detector": "rule",
+      "message": "Values are not an allowed pair in the contract"
+    }
+  ],
+  "statistics": {
+    "null_drift": [],
+    "status": "not_run",
+    "reason": "A nonempty explicit baseline and current dataset with shared declared fields are required"
+  },
+  "semantic": {
+    "status": "unsupported",
+    "reason": "Contract rules do not assess semantic correctness; no semantic model was run"
+  },
+  "scope": "Only declared checks were evaluated. No alerts does not establish dataset correctness.",
+  "normalization": {
+    "current": {
+      "applied": true,
+      "source_types": "CSV cells were read as strings",
+      "policy": "Empty cells -> null; declared numeric/boolean types convert only accepted literal spellings; invalid values remain unchanged",
+      "conversion_count": 3,
+      "conversions": [
+        {
+          "row_index": 0,
+          "column": "amount",
+          "from_type": "string",
+          "to_type": "float"
+        },
+        {
+          "row_index": 1,
+          "column": "amount",
+          "from_type": "string",
+          "to_type": "float"
+        },
+        {
+          "row_index": 1,
+          "column": "shipped_at",
+          "from_type": "string",
+          "to_type": "NoneType"
+        }
+      ]
+    },
+    "baseline": null
+  },
+  "input": {
+    "path": "C:\\Users\\gagan\\OneDrive\\Desktop\\assignment\\examples\\orders.csv",
+    "baseline_path": null,
+    "row_index_convention": "Zero-based physical record index, never a primary-key value"
+  }
+}

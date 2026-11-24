@@ -1,0 +1,8813 @@
+{
+  "provenance": {
+    "kind": "independent_engineering_oracle",
+    "official_calculator_validated": false,
+    "source": "project_a/source_rules.md",
+    "generator": "tests/tax_oracle.py",
+    "method": "Manually transcribed positive-part slope formulas; no production code/config imports."
+  },
+  "case_count": 488,
+  "regime_expectations": 976,
+  "cases": [
+    {
+      "id": "TAX-0001",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 49990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 0,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0002",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 49999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 0,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0003",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 50000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 0,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0004",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 50001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 0,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0005",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 50010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0006",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 299990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 249990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 224990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0007",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 299999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0008",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 300000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0009",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 300001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0010",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 300010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0011",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 349990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 299990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 274990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0012",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 349999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 300000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 275000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0013",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 350000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 300000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 275000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0014",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 350001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 300000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 275000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0015",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 350010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 300010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 275010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0016",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 449990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 399990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 374990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0017",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 449999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 400000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 375000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0018",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 450000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 400000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 375000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0019",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 450001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 400000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 375000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0020",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 450010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 400010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 375010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0021",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 549990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 499990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 474990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0022",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 549999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0023",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 550000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0024",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 550001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0025",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 550010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500010,
+          "total_tax": 13000
+        },
+        "new": {
+          "taxable_income": 475010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0026",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 749990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 699990,
+          "total_tax": 54600
+        },
+        "new": {
+          "taxable_income": 674990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0027",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 749999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 700000,
+          "total_tax": 54600
+        },
+        "new": {
+          "taxable_income": 675000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0028",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 750000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 700000,
+          "total_tax": 54600
+        },
+        "new": {
+          "taxable_income": 675000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0029",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 750001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 700000,
+          "total_tax": 54600
+        },
+        "new": {
+          "taxable_income": 675000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0030",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 750010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 700010,
+          "total_tax": 54600
+        },
+        "new": {
+          "taxable_income": 675010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0031",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 849990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 799990,
+          "total_tax": 75400
+        },
+        "new": {
+          "taxable_income": 774990,
+          "total_tax": 28600
+        }
+      }
+    },
+    {
+      "id": "TAX-0032",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 849999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 800000,
+          "total_tax": 75400
+        },
+        "new": {
+          "taxable_income": 775000,
+          "total_tax": 28600
+        }
+      }
+    },
+    {
+      "id": "TAX-0033",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 850000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 800000,
+          "total_tax": 75400
+        },
+        "new": {
+          "taxable_income": 775000,
+          "total_tax": 28600
+        }
+      }
+    },
+    {
+      "id": "TAX-0034",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 850001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 800000,
+          "total_tax": 75400
+        },
+        "new": {
+          "taxable_income": 775000,
+          "total_tax": 28600
+        }
+      }
+    },
+    {
+      "id": "TAX-0035",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 850010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 800010,
+          "total_tax": 75400
+        },
+        "new": {
+          "taxable_income": 775010,
+          "total_tax": 28600
+        }
+      }
+    },
+    {
+      "id": "TAX-0036",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1049990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 999990,
+          "total_tax": 117000
+        },
+        "new": {
+          "taxable_income": 974990,
+          "total_tax": 49400
+        }
+      }
+    },
+    {
+      "id": "TAX-0037",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1049999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1000000,
+          "total_tax": 117000
+        },
+        "new": {
+          "taxable_income": 975000,
+          "total_tax": 49400
+        }
+      }
+    },
+    {
+      "id": "TAX-0038",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1050000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1000000,
+          "total_tax": 117000
+        },
+        "new": {
+          "taxable_income": 975000,
+          "total_tax": 49400
+        }
+      }
+    },
+    {
+      "id": "TAX-0039",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1050001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1000000,
+          "total_tax": 117000
+        },
+        "new": {
+          "taxable_income": 975000,
+          "total_tax": 49400
+        }
+      }
+    },
+    {
+      "id": "TAX-0040",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1050010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1000010,
+          "total_tax": 117000
+        },
+        "new": {
+          "taxable_income": 975010,
+          "total_tax": 49400
+        }
+      }
+    },
+    {
+      "id": "TAX-0041",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1249990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1199990,
+          "total_tax": 179400
+        },
+        "new": {
+          "taxable_income": 1174990,
+          "total_tax": 79300
+        }
+      }
+    },
+    {
+      "id": "TAX-0042",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1249999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1200000,
+          "total_tax": 179400
+        },
+        "new": {
+          "taxable_income": 1175000,
+          "total_tax": 79300
+        }
+      }
+    },
+    {
+      "id": "TAX-0043",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1250000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1200000,
+          "total_tax": 179400
+        },
+        "new": {
+          "taxable_income": 1175000,
+          "total_tax": 79300
+        }
+      }
+    },
+    {
+      "id": "TAX-0044",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1250001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1200000,
+          "total_tax": 179400
+        },
+        "new": {
+          "taxable_income": 1175000,
+          "total_tax": 79300
+        }
+      }
+    },
+    {
+      "id": "TAX-0045",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1250010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1200010,
+          "total_tax": 179400
+        },
+        "new": {
+          "taxable_income": 1175010,
+          "total_tax": 79300
+        }
+      }
+    },
+    {
+      "id": "TAX-0046",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1314700
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1264700,
+          "total_tax": 199590
+        },
+        "new": {
+          "taxable_income": 1239700,
+          "total_tax": 91460
+        }
+      }
+    },
+    {
+      "id": "TAX-0047",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1314709
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1264710,
+          "total_tax": 199590
+        },
+        "new": {
+          "taxable_income": 1239710,
+          "total_tax": 91460
+        }
+      }
+    },
+    {
+      "id": "TAX-0048",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1314710
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1264710,
+          "total_tax": 199590
+        },
+        "new": {
+          "taxable_income": 1239710,
+          "total_tax": 91460
+        }
+      }
+    },
+    {
+      "id": "TAX-0049",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1314711
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1264710,
+          "total_tax": 199590
+        },
+        "new": {
+          "taxable_income": 1239710,
+          "total_tax": 91460
+        }
+      }
+    },
+    {
+      "id": "TAX-0050",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1314720
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1264720,
+          "total_tax": 199590
+        },
+        "new": {
+          "taxable_income": 1239720,
+          "total_tax": 91460
+        }
+      }
+    },
+    {
+      "id": "TAX-0051",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1320580
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270580,
+          "total_tax": 201420
+        },
+        "new": {
+          "taxable_income": 1245580,
+          "total_tax": 92680
+        }
+      }
+    },
+    {
+      "id": "TAX-0052",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1320589
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270590,
+          "total_tax": 201420
+        },
+        "new": {
+          "taxable_income": 1245590,
+          "total_tax": 92680
+        }
+      }
+    },
+    {
+      "id": "TAX-0053",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1320590
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270590,
+          "total_tax": 201420
+        },
+        "new": {
+          "taxable_income": 1245590,
+          "total_tax": 92680
+        }
+      }
+    },
+    {
+      "id": "TAX-0054",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1320591
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270590,
+          "total_tax": 201420
+        },
+        "new": {
+          "taxable_income": 1245590,
+          "total_tax": 92680
+        }
+      }
+    },
+    {
+      "id": "TAX-0055",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1320600
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270600,
+          "total_tax": 201430
+        },
+        "new": {
+          "taxable_income": 1245600,
+          "total_tax": 92680
+        }
+      }
+    },
+    {
+      "id": "TAX-0056",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1549990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1499990,
+          "total_tax": 273000
+        },
+        "new": {
+          "taxable_income": 1474990,
+          "total_tax": 140400
+        }
+      }
+    },
+    {
+      "id": "TAX-0057",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1549999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1500000,
+          "total_tax": 273000
+        },
+        "new": {
+          "taxable_income": 1475000,
+          "total_tax": 140400
+        }
+      }
+    },
+    {
+      "id": "TAX-0058",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1550000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1500000,
+          "total_tax": 273000
+        },
+        "new": {
+          "taxable_income": 1475000,
+          "total_tax": 140400
+        }
+      }
+    },
+    {
+      "id": "TAX-0059",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1550001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1500000,
+          "total_tax": 273000
+        },
+        "new": {
+          "taxable_income": 1475000,
+          "total_tax": 140400
+        }
+      }
+    },
+    {
+      "id": "TAX-0060",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1550010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1500010,
+          "total_tax": 273000
+        },
+        "new": {
+          "taxable_income": 1475010,
+          "total_tax": 140400
+        }
+      }
+    },
+    {
+      "id": "TAX-0061",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1649990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1599990,
+          "total_tax": 304200
+        },
+        "new": {
+          "taxable_income": 1574990,
+          "total_tax": 169000
+        }
+      }
+    },
+    {
+      "id": "TAX-0062",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1649999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1600000,
+          "total_tax": 304200
+        },
+        "new": {
+          "taxable_income": 1575000,
+          "total_tax": 169000
+        }
+      }
+    },
+    {
+      "id": "TAX-0063",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1650000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1600000,
+          "total_tax": 304200
+        },
+        "new": {
+          "taxable_income": 1575000,
+          "total_tax": 169000
+        }
+      }
+    },
+    {
+      "id": "TAX-0064",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1650001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1600000,
+          "total_tax": 304200
+        },
+        "new": {
+          "taxable_income": 1575000,
+          "total_tax": 169000
+        }
+      }
+    },
+    {
+      "id": "TAX-0065",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1650010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1600010,
+          "total_tax": 304200
+        },
+        "new": {
+          "taxable_income": 1575010,
+          "total_tax": 169000
+        }
+      }
+    },
+    {
+      "id": "TAX-0066",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2049990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1999990,
+          "total_tax": 429000
+        },
+        "new": {
+          "taxable_income": 1974990,
+          "total_tax": 293800
+        }
+      }
+    },
+    {
+      "id": "TAX-0067",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2049999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2000000,
+          "total_tax": 429000
+        },
+        "new": {
+          "taxable_income": 1975000,
+          "total_tax": 293800
+        }
+      }
+    },
+    {
+      "id": "TAX-0068",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2050000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2000000,
+          "total_tax": 429000
+        },
+        "new": {
+          "taxable_income": 1975000,
+          "total_tax": 293800
+        }
+      }
+    },
+    {
+      "id": "TAX-0069",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2050001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2000000,
+          "total_tax": 429000
+        },
+        "new": {
+          "taxable_income": 1975000,
+          "total_tax": 293800
+        }
+      }
+    },
+    {
+      "id": "TAX-0070",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2050010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2000010,
+          "total_tax": 429000
+        },
+        "new": {
+          "taxable_income": 1975010,
+          "total_tax": 293800
+        }
+      }
+    },
+    {
+      "id": "TAX-0071",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2449990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2399990,
+          "total_tax": 553800
+        },
+        "new": {
+          "taxable_income": 2374990,
+          "total_tax": 418600
+        }
+      }
+    },
+    {
+      "id": "TAX-0072",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2449999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2400000,
+          "total_tax": 553800
+        },
+        "new": {
+          "taxable_income": 2375000,
+          "total_tax": 418600
+        }
+      }
+    },
+    {
+      "id": "TAX-0073",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2450000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2400000,
+          "total_tax": 553800
+        },
+        "new": {
+          "taxable_income": 2375000,
+          "total_tax": 418600
+        }
+      }
+    },
+    {
+      "id": "TAX-0074",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2450001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2400000,
+          "total_tax": 553800
+        },
+        "new": {
+          "taxable_income": 2375000,
+          "total_tax": 418600
+        }
+      }
+    },
+    {
+      "id": "TAX-0075",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2450010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2400010,
+          "total_tax": 553800
+        },
+        "new": {
+          "taxable_income": 2375010,
+          "total_tax": 418600
+        }
+      }
+    },
+    {
+      "id": "TAX-0076",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5049990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 4999990,
+          "total_tax": 1365000
+        },
+        "new": {
+          "taxable_income": 4974990,
+          "total_tax": 1229800
+        }
+      }
+    },
+    {
+      "id": "TAX-0077",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5049999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000000,
+          "total_tax": 1365000
+        },
+        "new": {
+          "taxable_income": 4975000,
+          "total_tax": 1229800
+        }
+      }
+    },
+    {
+      "id": "TAX-0078",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5050000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000000,
+          "total_tax": 1365000
+        },
+        "new": {
+          "taxable_income": 4975000,
+          "total_tax": 1229800
+        }
+      }
+    },
+    {
+      "id": "TAX-0079",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5050001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000000,
+          "total_tax": 1365000
+        },
+        "new": {
+          "taxable_income": 4975000,
+          "total_tax": 1229800
+        }
+      }
+    },
+    {
+      "id": "TAX-0080",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5050010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1365010
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1229800
+        }
+      }
+    },
+    {
+      "id": "TAX-0081",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10049990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 9999990,
+          "total_tax": 3217500
+        },
+        "new": {
+          "taxable_income": 9974990,
+          "total_tax": 3068780
+        }
+      }
+    },
+    {
+      "id": "TAX-0082",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10049999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10000000,
+          "total_tax": 3217500
+        },
+        "new": {
+          "taxable_income": 9975000,
+          "total_tax": 3068780
+        }
+      }
+    },
+    {
+      "id": "TAX-0083",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10050000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10000000,
+          "total_tax": 3217500
+        },
+        "new": {
+          "taxable_income": 9975000,
+          "total_tax": 3068780
+        }
+      }
+    },
+    {
+      "id": "TAX-0084",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10050001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10000000,
+          "total_tax": 3217500
+        },
+        "new": {
+          "taxable_income": 9975000,
+          "total_tax": 3068780
+        }
+      }
+    },
+    {
+      "id": "TAX-0085",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10050010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10000010,
+          "total_tax": 3217510
+        },
+        "new": {
+          "taxable_income": 9975010,
+          "total_tax": 3068780
+        }
+      }
+    },
+    {
+      "id": "TAX-0086",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 20049990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 19999990,
+          "total_tax": 6951750
+        },
+        "new": {
+          "taxable_income": 19974990,
+          "total_tax": 6796270
+        }
+      }
+    },
+    {
+      "id": "TAX-0087",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 20049999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20000000,
+          "total_tax": 6951750
+        },
+        "new": {
+          "taxable_income": 19975000,
+          "total_tax": 6796270
+        }
+      }
+    },
+    {
+      "id": "TAX-0088",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 20050000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20000000,
+          "total_tax": 6951750
+        },
+        "new": {
+          "taxable_income": 19975000,
+          "total_tax": 6796270
+        }
+      }
+    },
+    {
+      "id": "TAX-0089",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 20050001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20000000,
+          "total_tax": 6951750
+        },
+        "new": {
+          "taxable_income": 19975000,
+          "total_tax": 6796270
+        }
+      }
+    },
+    {
+      "id": "TAX-0090",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 20050010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20000010,
+          "total_tax": 6951760
+        },
+        "new": {
+          "taxable_income": 19975010,
+          "total_tax": 6796270
+        }
+      }
+    },
+    {
+      "id": "TAX-0091",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 50049990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 49999990,
+          "total_tax": 19256250
+        },
+        "new": {
+          "taxable_income": 49974990,
+          "total_tax": 19087250
+        }
+      }
+    },
+    {
+      "id": "TAX-0092",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 50049999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50000000,
+          "total_tax": 19256250
+        },
+        "new": {
+          "taxable_income": 49975000,
+          "total_tax": 19087250
+        }
+      }
+    },
+    {
+      "id": "TAX-0093",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 50050000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50000000,
+          "total_tax": 19256250
+        },
+        "new": {
+          "taxable_income": 49975000,
+          "total_tax": 19087250
+        }
+      }
+    },
+    {
+      "id": "TAX-0094",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 50050001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50000000,
+          "total_tax": 19256250
+        },
+        "new": {
+          "taxable_income": 49975000,
+          "total_tax": 19087250
+        }
+      }
+    },
+    {
+      "id": "TAX-0095",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 50050010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50000010,
+          "total_tax": 19256260
+        },
+        "new": {
+          "taxable_income": 49975010,
+          "total_tax": 19087250
+        }
+      }
+    },
+    {
+      "id": "TAX-0096",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 74990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 24990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0097",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 74999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 25000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0098",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 75000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 25000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0099",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 75001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 25000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0100",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 75010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 25010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 10,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0101",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 324990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 274990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 249990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0102",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 324999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 275000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0103",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 325000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 275000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0104",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 325001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 275000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0105",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 325010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 275010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 250010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0106",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 374990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 324990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 299990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0107",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 374999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 325000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 300000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0108",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 375000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 325000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 300000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0109",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 375001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 325000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 300000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0110",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 375010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 325010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 300010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0111",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 474990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 424990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 399990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0112",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 474999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 425000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 400000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0113",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 475000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 425000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 400000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0114",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 475001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 425000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 400000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0115",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 475010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 425010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 400010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0116",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 574990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 524990,
+          "total_tax": 18200
+        },
+        "new": {
+          "taxable_income": 499990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0117",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 574999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 525000,
+          "total_tax": 18200
+        },
+        "new": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0118",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 575000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 525000,
+          "total_tax": 18200
+        },
+        "new": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0119",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 575001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 525000,
+          "total_tax": 18200
+        },
+        "new": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0120",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 575010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 525010,
+          "total_tax": 18200
+        },
+        "new": {
+          "taxable_income": 500010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0121",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 774990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 724990,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 699990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0122",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 774999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0123",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 775000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0124",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 775001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0125",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 775010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725010,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700010,
+          "total_tax": 10
+        }
+      }
+    },
+    {
+      "id": "TAX-0126",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 874990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 824990,
+          "total_tax": 80600
+        },
+        "new": {
+          "taxable_income": 799990,
+          "total_tax": 31200
+        }
+      }
+    },
+    {
+      "id": "TAX-0127",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 874999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 825000,
+          "total_tax": 80600
+        },
+        "new": {
+          "taxable_income": 800000,
+          "total_tax": 31200
+        }
+      }
+    },
+    {
+      "id": "TAX-0128",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 875000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 825000,
+          "total_tax": 80600
+        },
+        "new": {
+          "taxable_income": 800000,
+          "total_tax": 31200
+        }
+      }
+    },
+    {
+      "id": "TAX-0129",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 875001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 825000,
+          "total_tax": 80600
+        },
+        "new": {
+          "taxable_income": 800000,
+          "total_tax": 31200
+        }
+      }
+    },
+    {
+      "id": "TAX-0130",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 875010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 825010,
+          "total_tax": 80600
+        },
+        "new": {
+          "taxable_income": 800010,
+          "total_tax": 31200
+        }
+      }
+    },
+    {
+      "id": "TAX-0131",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1074990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1024990,
+          "total_tax": 124800
+        },
+        "new": {
+          "taxable_income": 999990,
+          "total_tax": 52000
+        }
+      }
+    },
+    {
+      "id": "TAX-0132",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1074999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1025000,
+          "total_tax": 124800
+        },
+        "new": {
+          "taxable_income": 1000000,
+          "total_tax": 52000
+        }
+      }
+    },
+    {
+      "id": "TAX-0133",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1075000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1025000,
+          "total_tax": 124800
+        },
+        "new": {
+          "taxable_income": 1000000,
+          "total_tax": 52000
+        }
+      }
+    },
+    {
+      "id": "TAX-0134",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1075001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1025000,
+          "total_tax": 124800
+        },
+        "new": {
+          "taxable_income": 1000000,
+          "total_tax": 52000
+        }
+      }
+    },
+    {
+      "id": "TAX-0135",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1075010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1025010,
+          "total_tax": 124800
+        },
+        "new": {
+          "taxable_income": 1000010,
+          "total_tax": 52000
+        }
+      }
+    },
+    {
+      "id": "TAX-0136",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1274990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1224990,
+          "total_tax": 187200
+        },
+        "new": {
+          "taxable_income": 1199990,
+          "total_tax": 83200
+        }
+      }
+    },
+    {
+      "id": "TAX-0137",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1274999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1225000,
+          "total_tax": 187200
+        },
+        "new": {
+          "taxable_income": 1200000,
+          "total_tax": 83200
+        }
+      }
+    },
+    {
+      "id": "TAX-0138",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1275000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1225000,
+          "total_tax": 187200
+        },
+        "new": {
+          "taxable_income": 1200000,
+          "total_tax": 83200
+        }
+      }
+    },
+    {
+      "id": "TAX-0139",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1275001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1225000,
+          "total_tax": 187200
+        },
+        "new": {
+          "taxable_income": 1200000,
+          "total_tax": 83200
+        }
+      }
+    },
+    {
+      "id": "TAX-0140",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1275010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1225010,
+          "total_tax": 187200
+        },
+        "new": {
+          "taxable_income": 1200010,
+          "total_tax": 83200
+        }
+      }
+    },
+    {
+      "id": "TAX-0141",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1339700
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1289700,
+          "total_tax": 207390
+        },
+        "new": {
+          "taxable_income": 1264700,
+          "total_tax": 96660
+        }
+      }
+    },
+    {
+      "id": "TAX-0142",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1339709
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1289710,
+          "total_tax": 207390
+        },
+        "new": {
+          "taxable_income": 1264710,
+          "total_tax": 96660
+        }
+      }
+    },
+    {
+      "id": "TAX-0143",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1339710
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1289710,
+          "total_tax": 207390
+        },
+        "new": {
+          "taxable_income": 1264710,
+          "total_tax": 96660
+        }
+      }
+    },
+    {
+      "id": "TAX-0144",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1339711
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1289710,
+          "total_tax": 207390
+        },
+        "new": {
+          "taxable_income": 1264710,
+          "total_tax": 96660
+        }
+      }
+    },
+    {
+      "id": "TAX-0145",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1339720
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1289720,
+          "total_tax": 207390
+        },
+        "new": {
+          "taxable_income": 1264720,
+          "total_tax": 96660
+        }
+      }
+    },
+    {
+      "id": "TAX-0146",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1345580
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1295580,
+          "total_tax": 209220
+        },
+        "new": {
+          "taxable_income": 1270580,
+          "total_tax": 97880
+        }
+      }
+    },
+    {
+      "id": "TAX-0147",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1345589
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1295590,
+          "total_tax": 209220
+        },
+        "new": {
+          "taxable_income": 1270590,
+          "total_tax": 97880
+        }
+      }
+    },
+    {
+      "id": "TAX-0148",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1345590
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1295590,
+          "total_tax": 209220
+        },
+        "new": {
+          "taxable_income": 1270590,
+          "total_tax": 97880
+        }
+      }
+    },
+    {
+      "id": "TAX-0149",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1345591
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1295590,
+          "total_tax": 209220
+        },
+        "new": {
+          "taxable_income": 1270590,
+          "total_tax": 97880
+        }
+      }
+    },
+    {
+      "id": "TAX-0150",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1345600
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1295600,
+          "total_tax": 209230
+        },
+        "new": {
+          "taxable_income": 1270600,
+          "total_tax": 97880
+        }
+      }
+    },
+    {
+      "id": "TAX-0151",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1574990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1524990,
+          "total_tax": 280800
+        },
+        "new": {
+          "taxable_income": 1499990,
+          "total_tax": 145600
+        }
+      }
+    },
+    {
+      "id": "TAX-0152",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1574999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1525000,
+          "total_tax": 280800
+        },
+        "new": {
+          "taxable_income": 1500000,
+          "total_tax": 145600
+        }
+      }
+    },
+    {
+      "id": "TAX-0153",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1575000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1525000,
+          "total_tax": 280800
+        },
+        "new": {
+          "taxable_income": 1500000,
+          "total_tax": 145600
+        }
+      }
+    },
+    {
+      "id": "TAX-0154",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1575001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1525000,
+          "total_tax": 280800
+        },
+        "new": {
+          "taxable_income": 1500000,
+          "total_tax": 145600
+        }
+      }
+    },
+    {
+      "id": "TAX-0155",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1575010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1525010,
+          "total_tax": 280800
+        },
+        "new": {
+          "taxable_income": 1500010,
+          "total_tax": 145600
+        }
+      }
+    },
+    {
+      "id": "TAX-0156",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1674990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1624990,
+          "total_tax": 312000
+        },
+        "new": {
+          "taxable_income": 1599990,
+          "total_tax": 176800
+        }
+      }
+    },
+    {
+      "id": "TAX-0157",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1674999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1625000,
+          "total_tax": 312000
+        },
+        "new": {
+          "taxable_income": 1600000,
+          "total_tax": 176800
+        }
+      }
+    },
+    {
+      "id": "TAX-0158",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1675000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1625000,
+          "total_tax": 312000
+        },
+        "new": {
+          "taxable_income": 1600000,
+          "total_tax": 176800
+        }
+      }
+    },
+    {
+      "id": "TAX-0159",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1675001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1625000,
+          "total_tax": 312000
+        },
+        "new": {
+          "taxable_income": 1600000,
+          "total_tax": 176800
+        }
+      }
+    },
+    {
+      "id": "TAX-0160",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1675010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1625010,
+          "total_tax": 312000
+        },
+        "new": {
+          "taxable_income": 1600010,
+          "total_tax": 176800
+        }
+      }
+    },
+    {
+      "id": "TAX-0161",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2074990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2024990,
+          "total_tax": 436800
+        },
+        "new": {
+          "taxable_income": 1999990,
+          "total_tax": 301600
+        }
+      }
+    },
+    {
+      "id": "TAX-0162",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2074999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2025000,
+          "total_tax": 436800
+        },
+        "new": {
+          "taxable_income": 2000000,
+          "total_tax": 301600
+        }
+      }
+    },
+    {
+      "id": "TAX-0163",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2075000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2025000,
+          "total_tax": 436800
+        },
+        "new": {
+          "taxable_income": 2000000,
+          "total_tax": 301600
+        }
+      }
+    },
+    {
+      "id": "TAX-0164",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2075001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2025000,
+          "total_tax": 436800
+        },
+        "new": {
+          "taxable_income": 2000000,
+          "total_tax": 301600
+        }
+      }
+    },
+    {
+      "id": "TAX-0165",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2075010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2025010,
+          "total_tax": 436800
+        },
+        "new": {
+          "taxable_income": 2000010,
+          "total_tax": 301600
+        }
+      }
+    },
+    {
+      "id": "TAX-0166",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2474990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2424990,
+          "total_tax": 561600
+        },
+        "new": {
+          "taxable_income": 2399990,
+          "total_tax": 426400
+        }
+      }
+    },
+    {
+      "id": "TAX-0167",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2474999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2425000,
+          "total_tax": 561600
+        },
+        "new": {
+          "taxable_income": 2400000,
+          "total_tax": 426400
+        }
+      }
+    },
+    {
+      "id": "TAX-0168",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2475000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2425000,
+          "total_tax": 561600
+        },
+        "new": {
+          "taxable_income": 2400000,
+          "total_tax": 426400
+        }
+      }
+    },
+    {
+      "id": "TAX-0169",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2475001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2425000,
+          "total_tax": 561600
+        },
+        "new": {
+          "taxable_income": 2400000,
+          "total_tax": 426400
+        }
+      }
+    },
+    {
+      "id": "TAX-0170",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 2475010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2425010,
+          "total_tax": 561600
+        },
+        "new": {
+          "taxable_income": 2400010,
+          "total_tax": 426400
+        }
+      }
+    },
+    {
+      "id": "TAX-0171",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5074990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5024990,
+          "total_tax": 1390990
+        },
+        "new": {
+          "taxable_income": 4999990,
+          "total_tax": 1237600
+        }
+      }
+    },
+    {
+      "id": "TAX-0172",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5074999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5025000,
+          "total_tax": 1391000
+        },
+        "new": {
+          "taxable_income": 5000000,
+          "total_tax": 1237600
+        }
+      }
+    },
+    {
+      "id": "TAX-0173",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5075000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5025000,
+          "total_tax": 1391000
+        },
+        "new": {
+          "taxable_income": 5000000,
+          "total_tax": 1237600
+        }
+      }
+    },
+    {
+      "id": "TAX-0174",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5075001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5025000,
+          "total_tax": 1391000
+        },
+        "new": {
+          "taxable_income": 5000000,
+          "total_tax": 1237600
+        }
+      }
+    },
+    {
+      "id": "TAX-0175",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5075010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5025010,
+          "total_tax": 1391010
+        },
+        "new": {
+          "taxable_income": 5000010,
+          "total_tax": 1237610
+        }
+      }
+    },
+    {
+      "id": "TAX-0176",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10074990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10024990,
+          "total_tax": 3243490
+        },
+        "new": {
+          "taxable_income": 9999990,
+          "total_tax": 3077360
+        }
+      }
+    },
+    {
+      "id": "TAX-0177",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10074999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025000,
+          "total_tax": 3243500
+        },
+        "new": {
+          "taxable_income": 10000000,
+          "total_tax": 3077360
+        }
+      }
+    },
+    {
+      "id": "TAX-0178",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10075000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025000,
+          "total_tax": 3243500
+        },
+        "new": {
+          "taxable_income": 10000000,
+          "total_tax": 3077360
+        }
+      }
+    },
+    {
+      "id": "TAX-0179",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10075001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025000,
+          "total_tax": 3243500
+        },
+        "new": {
+          "taxable_income": 10000000,
+          "total_tax": 3077360
+        }
+      }
+    },
+    {
+      "id": "TAX-0180",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10075010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3243510
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 3077370
+        }
+      }
+    },
+    {
+      "id": "TAX-0181",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 20074990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20024990,
+          "total_tax": 6977740
+        },
+        "new": {
+          "taxable_income": 19999990,
+          "total_tax": 6805240
+        }
+      }
+    },
+    {
+      "id": "TAX-0182",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 20074999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20025000,
+          "total_tax": 6977750
+        },
+        "new": {
+          "taxable_income": 20000000,
+          "total_tax": 6805240
+        }
+      }
+    },
+    {
+      "id": "TAX-0183",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 20075000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20025000,
+          "total_tax": 6977750
+        },
+        "new": {
+          "taxable_income": 20000000,
+          "total_tax": 6805240
+        }
+      }
+    },
+    {
+      "id": "TAX-0184",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 20075001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20025000,
+          "total_tax": 6977750
+        },
+        "new": {
+          "taxable_income": 20000000,
+          "total_tax": 6805240
+        }
+      }
+    },
+    {
+      "id": "TAX-0185",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 20075010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20025010,
+          "total_tax": 6977760
+        },
+        "new": {
+          "taxable_income": 20000010,
+          "total_tax": 6805250
+        }
+      }
+    },
+    {
+      "id": "TAX-0186",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 50074990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50024990,
+          "total_tax": 19282240
+        },
+        "new": {
+          "taxable_income": 49999990,
+          "total_tax": 19097000
+        }
+      }
+    },
+    {
+      "id": "TAX-0187",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 50074999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50025000,
+          "total_tax": 19282250
+        },
+        "new": {
+          "taxable_income": 50000000,
+          "total_tax": 19097000
+        }
+      }
+    },
+    {
+      "id": "TAX-0188",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 50075000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50025000,
+          "total_tax": 19282250
+        },
+        "new": {
+          "taxable_income": 50000000,
+          "total_tax": 19097000
+        }
+      }
+    },
+    {
+      "id": "TAX-0189",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 50075001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50025000,
+          "total_tax": 19282250
+        },
+        "new": {
+          "taxable_income": 50000000,
+          "total_tax": 19097000
+        }
+      }
+    },
+    {
+      "id": "TAX-0190",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 50075010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50025010,
+          "total_tax": 19282260
+        },
+        "new": {
+          "taxable_income": 50000010,
+          "total_tax": 19097000
+        }
+      }
+    },
+    {
+      "id": "TAX-0191",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 300000,
+        "age": 30,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0192",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 550000,
+        "age": 30,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0193",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 775000,
+        "age": 30,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0194",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1285000,
+        "age": 30,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1235000,
+          "total_tax": 190320
+        },
+        "new": {
+          "taxable_income": 1210000,
+          "total_tax": 85280
+        }
+      }
+    },
+    {
+      "id": "TAX-0195",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5050010,
+        "age": 30,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1365010
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1229800
+        }
+      }
+    },
+    {
+      "id": "TAX-0196",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10075010,
+        "age": 30,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3243510
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 3077370
+        }
+      }
+    },
+    {
+      "id": "TAX-0197",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 300000,
+        "age": 30,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0198",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 550000,
+        "age": 30,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 13000
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 9100
+        }
+      }
+    },
+    {
+      "id": "TAX-0199",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 775000,
+        "age": 30,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 20800
+        }
+      }
+    },
+    {
+      "id": "TAX-0200",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1285000,
+        "age": 30,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1235000,
+          "total_tax": 190320
+        },
+        "new": {
+          "taxable_income": 1210000,
+          "total_tax": 85280
+        }
+      }
+    },
+    {
+      "id": "TAX-0201",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5050010,
+        "age": 30,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1365010
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1229800
+        }
+      }
+    },
+    {
+      "id": "TAX-0202",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10075010,
+        "age": 30,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3243510
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 3077370
+        }
+      }
+    },
+    {
+      "id": "TAX-0203",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 300000,
+        "age": 60,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0204",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 550000,
+        "age": 60,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0205",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 775000,
+        "age": 60,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 57200
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0206",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1285000,
+        "age": 60,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1235000,
+          "total_tax": 187720
+        },
+        "new": {
+          "taxable_income": 1210000,
+          "total_tax": 85280
+        }
+      }
+    },
+    {
+      "id": "TAX-0207",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5050010,
+        "age": 60,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1362410
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1229800
+        }
+      }
+    },
+    {
+      "id": "TAX-0208",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10075010,
+        "age": 60,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3240650
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 3077370
+        }
+      }
+    },
+    {
+      "id": "TAX-0209",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 300000,
+        "age": 60,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0210",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 550000,
+        "age": 60,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 13000
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 9100
+        }
+      }
+    },
+    {
+      "id": "TAX-0211",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 775000,
+        "age": 60,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 20800
+        }
+      }
+    },
+    {
+      "id": "TAX-0212",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1285000,
+        "age": 60,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1235000,
+          "total_tax": 190320
+        },
+        "new": {
+          "taxable_income": 1210000,
+          "total_tax": 85280
+        }
+      }
+    },
+    {
+      "id": "TAX-0213",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5050010,
+        "age": 60,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1365010
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1229800
+        }
+      }
+    },
+    {
+      "id": "TAX-0214",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10075010,
+        "age": 60,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3243510
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 3077370
+        }
+      }
+    },
+    {
+      "id": "TAX-0215",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 300000,
+        "age": 80,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0216",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 550000,
+        "age": 80,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0217",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 775000,
+        "age": 80,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 46800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0218",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1285000,
+        "age": 80,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1235000,
+          "total_tax": 177320
+        },
+        "new": {
+          "taxable_income": 1210000,
+          "total_tax": 85280
+        }
+      }
+    },
+    {
+      "id": "TAX-0219",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5050010,
+        "age": 80,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1352010
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1229800
+        }
+      }
+    },
+    {
+      "id": "TAX-0220",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10075010,
+        "age": 80,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3229210
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 3077370
+        }
+      }
+    },
+    {
+      "id": "TAX-0221",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 300000,
+        "age": 80,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0222",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 550000,
+        "age": 80,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 13000
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 9100
+        }
+      }
+    },
+    {
+      "id": "TAX-0223",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 775000,
+        "age": 80,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 20800
+        }
+      }
+    },
+    {
+      "id": "TAX-0224",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1285000,
+        "age": 80,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1235000,
+          "total_tax": 190320
+        },
+        "new": {
+          "taxable_income": 1210000,
+          "total_tax": 85280
+        }
+      }
+    },
+    {
+      "id": "TAX-0225",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 5050010,
+        "age": 80,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1365010
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1229800
+        }
+      }
+    },
+    {
+      "id": "TAX-0226",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 10075010,
+        "age": 80,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3243510
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 3077370
+        }
+      }
+    },
+    {
+      "id": "TAX-0227",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 0,
+        "deduction_80ccd1b": 0,
+        "medical_self_family": 0,
+        "medical_parents": 0,
+        "parents_senior": true,
+        "home_loan_interest": 0
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270000,
+          "total_tax": 201240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0228",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 24999,
+        "deduction_80ccd1b": 24999,
+        "medical_self_family": 24999,
+        "medical_parents": 24999,
+        "parents_senior": true,
+        "home_loan_interest": 24999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1145010,
+          "total_tax": 162240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0229",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 25000,
+        "deduction_80ccd1b": 25000,
+        "medical_self_family": 25000,
+        "medical_parents": 25000,
+        "parents_senior": true,
+        "home_loan_interest": 25000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1145000,
+          "total_tax": 162240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0230",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 25001,
+        "deduction_80ccd1b": 25001,
+        "medical_self_family": 25001,
+        "medical_parents": 25001,
+        "parents_senior": true,
+        "home_loan_interest": 25001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1145000,
+          "total_tax": 162240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0231",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 49999,
+        "deduction_80ccd1b": 49999,
+        "medical_self_family": 49999,
+        "medical_parents": 49999,
+        "parents_senior": true,
+        "home_loan_interest": 49999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1045000,
+          "total_tax": 131040
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0232",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 50000,
+        "deduction_80ccd1b": 50000,
+        "medical_self_family": 50000,
+        "medical_parents": 50000,
+        "parents_senior": true,
+        "home_loan_interest": 50000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1045000,
+          "total_tax": 131040
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0233",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 50001,
+        "deduction_80ccd1b": 50001,
+        "medical_self_family": 50001,
+        "medical_parents": 50001,
+        "parents_senior": true,
+        "home_loan_interest": 50001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1045000,
+          "total_tax": 131040
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0234",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 150000,
+        "deduction_80ccd1b": 150000,
+        "medical_self_family": 150000,
+        "medical_parents": 150000,
+        "parents_senior": true,
+        "home_loan_interest": 150000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 845000,
+          "total_tax": 84760
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0235",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 200001,
+        "deduction_80ccd1b": 200001,
+        "medical_self_family": 200001,
+        "medical_parents": 200001,
+        "parents_senior": true,
+        "home_loan_interest": 200001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 795000,
+          "total_tax": 74360
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0236",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 0,
+        "deduction_80ccd1b": 0,
+        "medical_self_family": 0,
+        "medical_parents": 0,
+        "parents_senior": true,
+        "home_loan_interest": 0
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270000,
+          "total_tax": 201240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0237",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 24999,
+        "deduction_80ccd1b": 24999,
+        "medical_self_family": 24999,
+        "medical_parents": 24999,
+        "parents_senior": true,
+        "home_loan_interest": 24999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1145010,
+          "total_tax": 162240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0238",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 25000,
+        "deduction_80ccd1b": 25000,
+        "medical_self_family": 25000,
+        "medical_parents": 25000,
+        "parents_senior": true,
+        "home_loan_interest": 25000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1145000,
+          "total_tax": 162240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0239",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 25001,
+        "deduction_80ccd1b": 25001,
+        "medical_self_family": 25001,
+        "medical_parents": 25001,
+        "parents_senior": true,
+        "home_loan_interest": 25001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1145000,
+          "total_tax": 162240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0240",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 49999,
+        "deduction_80ccd1b": 49999,
+        "medical_self_family": 49999,
+        "medical_parents": 49999,
+        "parents_senior": true,
+        "home_loan_interest": 49999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1045000,
+          "total_tax": 131040
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0241",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 50000,
+        "deduction_80ccd1b": 50000,
+        "medical_self_family": 50000,
+        "medical_parents": 50000,
+        "parents_senior": true,
+        "home_loan_interest": 50000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1045000,
+          "total_tax": 131040
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0242",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 50001,
+        "deduction_80ccd1b": 50001,
+        "medical_self_family": 50001,
+        "medical_parents": 50001,
+        "parents_senior": true,
+        "home_loan_interest": 50001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1045000,
+          "total_tax": 131040
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0243",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 150000,
+        "deduction_80ccd1b": 150000,
+        "medical_self_family": 150000,
+        "medical_parents": 150000,
+        "parents_senior": true,
+        "home_loan_interest": 150000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 845000,
+          "total_tax": 84760
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0244",
+      "input": {
+        "fiscal_year": "2024-25",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 200001,
+        "deduction_80ccd1b": 200001,
+        "medical_self_family": 200001,
+        "medical_parents": 200001,
+        "parents_senior": true,
+        "home_loan_interest": 200001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 795000,
+          "total_tax": 74360
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 130000
+        }
+      }
+    },
+    {
+      "id": "TAX-0245",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 49990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 0,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0246",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 49999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 0,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0247",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 50000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 0,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0248",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 50001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 0,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0249",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 50010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0250",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 299990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 249990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 224990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0251",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 299999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0252",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 300000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0253",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 300001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0254",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 300010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0255",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 349990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 299990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 274990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0256",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 349999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 300000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 275000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0257",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 350000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 300000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 275000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0258",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 350001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 300000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 275000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0259",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 350010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 300010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 275010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0260",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 449990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 399990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 374990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0261",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 449999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 400000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 375000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0262",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 450000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 400000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 375000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0263",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 450001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 400000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 375000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0264",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 450010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 400010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 375010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0265",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 549990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 499990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 474990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0266",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 549999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0267",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 550000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0268",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 550001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0269",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 550010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500010,
+          "total_tax": 13000
+        },
+        "new": {
+          "taxable_income": 475010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0270",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 749990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 699990,
+          "total_tax": 54600
+        },
+        "new": {
+          "taxable_income": 674990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0271",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 749999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 700000,
+          "total_tax": 54600
+        },
+        "new": {
+          "taxable_income": 675000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0272",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 750000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 700000,
+          "total_tax": 54600
+        },
+        "new": {
+          "taxable_income": 675000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0273",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 750001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 700000,
+          "total_tax": 54600
+        },
+        "new": {
+          "taxable_income": 675000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0274",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 750010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 700010,
+          "total_tax": 54600
+        },
+        "new": {
+          "taxable_income": 675010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0275",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 849990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 799990,
+          "total_tax": 75400
+        },
+        "new": {
+          "taxable_income": 774990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0276",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 849999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 800000,
+          "total_tax": 75400
+        },
+        "new": {
+          "taxable_income": 775000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0277",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 850000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 800000,
+          "total_tax": 75400
+        },
+        "new": {
+          "taxable_income": 775000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0278",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 850001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 800000,
+          "total_tax": 75400
+        },
+        "new": {
+          "taxable_income": 775000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0279",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 850010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 800010,
+          "total_tax": 75400
+        },
+        "new": {
+          "taxable_income": 775010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0280",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1049990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 999990,
+          "total_tax": 117000
+        },
+        "new": {
+          "taxable_income": 974990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0281",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1049999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1000000,
+          "total_tax": 117000
+        },
+        "new": {
+          "taxable_income": 975000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0282",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1050000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1000000,
+          "total_tax": 117000
+        },
+        "new": {
+          "taxable_income": 975000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0283",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1050001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1000000,
+          "total_tax": 117000
+        },
+        "new": {
+          "taxable_income": 975000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0284",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1050010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1000010,
+          "total_tax": 117000
+        },
+        "new": {
+          "taxable_income": 975010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0285",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1249990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1199990,
+          "total_tax": 179400
+        },
+        "new": {
+          "taxable_income": 1174990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0286",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1249999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1200000,
+          "total_tax": 179400
+        },
+        "new": {
+          "taxable_income": 1175000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0287",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1250000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1200000,
+          "total_tax": 179400
+        },
+        "new": {
+          "taxable_income": 1175000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0288",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1250001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1200000,
+          "total_tax": 179400
+        },
+        "new": {
+          "taxable_income": 1175000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0289",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1250010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1200010,
+          "total_tax": 179400
+        },
+        "new": {
+          "taxable_income": 1175010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0290",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1314700
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1264700,
+          "total_tax": 199590
+        },
+        "new": {
+          "taxable_income": 1239700,
+          "total_tax": 41290
+        }
+      }
+    },
+    {
+      "id": "TAX-0291",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1314709
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1264710,
+          "total_tax": 199590
+        },
+        "new": {
+          "taxable_income": 1239710,
+          "total_tax": 41300
+        }
+      }
+    },
+    {
+      "id": "TAX-0292",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1314710
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1264710,
+          "total_tax": 199590
+        },
+        "new": {
+          "taxable_income": 1239710,
+          "total_tax": 41300
+        }
+      }
+    },
+    {
+      "id": "TAX-0293",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1314711
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1264710,
+          "total_tax": 199590
+        },
+        "new": {
+          "taxable_income": 1239710,
+          "total_tax": 41300
+        }
+      }
+    },
+    {
+      "id": "TAX-0294",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1314720
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1264720,
+          "total_tax": 199590
+        },
+        "new": {
+          "taxable_income": 1239720,
+          "total_tax": 41310
+        }
+      }
+    },
+    {
+      "id": "TAX-0295",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1320580
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270580,
+          "total_tax": 201420
+        },
+        "new": {
+          "taxable_income": 1245580,
+          "total_tax": 47400
+        }
+      }
+    },
+    {
+      "id": "TAX-0296",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1320589
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270590,
+          "total_tax": 201420
+        },
+        "new": {
+          "taxable_income": 1245590,
+          "total_tax": 47410
+        }
+      }
+    },
+    {
+      "id": "TAX-0297",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1320590
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270590,
+          "total_tax": 201420
+        },
+        "new": {
+          "taxable_income": 1245590,
+          "total_tax": 47410
+        }
+      }
+    },
+    {
+      "id": "TAX-0298",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1320591
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270590,
+          "total_tax": 201420
+        },
+        "new": {
+          "taxable_income": 1245590,
+          "total_tax": 47410
+        }
+      }
+    },
+    {
+      "id": "TAX-0299",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1320600
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270600,
+          "total_tax": 201430
+        },
+        "new": {
+          "taxable_income": 1245600,
+          "total_tax": 47420
+        }
+      }
+    },
+    {
+      "id": "TAX-0300",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1549990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1499990,
+          "total_tax": 273000
+        },
+        "new": {
+          "taxable_income": 1474990,
+          "total_tax": 105300
+        }
+      }
+    },
+    {
+      "id": "TAX-0301",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1549999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1500000,
+          "total_tax": 273000
+        },
+        "new": {
+          "taxable_income": 1475000,
+          "total_tax": 105300
+        }
+      }
+    },
+    {
+      "id": "TAX-0302",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1550000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1500000,
+          "total_tax": 273000
+        },
+        "new": {
+          "taxable_income": 1475000,
+          "total_tax": 105300
+        }
+      }
+    },
+    {
+      "id": "TAX-0303",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1550001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1500000,
+          "total_tax": 273000
+        },
+        "new": {
+          "taxable_income": 1475000,
+          "total_tax": 105300
+        }
+      }
+    },
+    {
+      "id": "TAX-0304",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1550010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1500010,
+          "total_tax": 273000
+        },
+        "new": {
+          "taxable_income": 1475010,
+          "total_tax": 105300
+        }
+      }
+    },
+    {
+      "id": "TAX-0305",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1649990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1599990,
+          "total_tax": 304200
+        },
+        "new": {
+          "taxable_income": 1574990,
+          "total_tax": 120900
+        }
+      }
+    },
+    {
+      "id": "TAX-0306",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1649999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1600000,
+          "total_tax": 304200
+        },
+        "new": {
+          "taxable_income": 1575000,
+          "total_tax": 120900
+        }
+      }
+    },
+    {
+      "id": "TAX-0307",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1650000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1600000,
+          "total_tax": 304200
+        },
+        "new": {
+          "taxable_income": 1575000,
+          "total_tax": 120900
+        }
+      }
+    },
+    {
+      "id": "TAX-0308",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1650001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1600000,
+          "total_tax": 304200
+        },
+        "new": {
+          "taxable_income": 1575000,
+          "total_tax": 120900
+        }
+      }
+    },
+    {
+      "id": "TAX-0309",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1650010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1600010,
+          "total_tax": 304200
+        },
+        "new": {
+          "taxable_income": 1575010,
+          "total_tax": 120900
+        }
+      }
+    },
+    {
+      "id": "TAX-0310",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2049990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1999990,
+          "total_tax": 429000
+        },
+        "new": {
+          "taxable_income": 1974990,
+          "total_tax": 202800
+        }
+      }
+    },
+    {
+      "id": "TAX-0311",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2049999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2000000,
+          "total_tax": 429000
+        },
+        "new": {
+          "taxable_income": 1975000,
+          "total_tax": 202800
+        }
+      }
+    },
+    {
+      "id": "TAX-0312",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2050000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2000000,
+          "total_tax": 429000
+        },
+        "new": {
+          "taxable_income": 1975000,
+          "total_tax": 202800
+        }
+      }
+    },
+    {
+      "id": "TAX-0313",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2050001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2000000,
+          "total_tax": 429000
+        },
+        "new": {
+          "taxable_income": 1975000,
+          "total_tax": 202800
+        }
+      }
+    },
+    {
+      "id": "TAX-0314",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2050010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2000010,
+          "total_tax": 429000
+        },
+        "new": {
+          "taxable_income": 1975010,
+          "total_tax": 202800
+        }
+      }
+    },
+    {
+      "id": "TAX-0315",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2449990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2399990,
+          "total_tax": 553800
+        },
+        "new": {
+          "taxable_income": 2374990,
+          "total_tax": 305500
+        }
+      }
+    },
+    {
+      "id": "TAX-0316",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2449999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2400000,
+          "total_tax": 553800
+        },
+        "new": {
+          "taxable_income": 2375000,
+          "total_tax": 305500
+        }
+      }
+    },
+    {
+      "id": "TAX-0317",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2450000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2400000,
+          "total_tax": 553800
+        },
+        "new": {
+          "taxable_income": 2375000,
+          "total_tax": 305500
+        }
+      }
+    },
+    {
+      "id": "TAX-0318",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2450001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2400000,
+          "total_tax": 553800
+        },
+        "new": {
+          "taxable_income": 2375000,
+          "total_tax": 305500
+        }
+      }
+    },
+    {
+      "id": "TAX-0319",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2450010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2400010,
+          "total_tax": 553800
+        },
+        "new": {
+          "taxable_income": 2375010,
+          "total_tax": 305500
+        }
+      }
+    },
+    {
+      "id": "TAX-0320",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5049990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 4999990,
+          "total_tax": 1365000
+        },
+        "new": {
+          "taxable_income": 4974990,
+          "total_tax": 1115400
+        }
+      }
+    },
+    {
+      "id": "TAX-0321",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5049999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000000,
+          "total_tax": 1365000
+        },
+        "new": {
+          "taxable_income": 4975000,
+          "total_tax": 1115400
+        }
+      }
+    },
+    {
+      "id": "TAX-0322",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5050000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000000,
+          "total_tax": 1365000
+        },
+        "new": {
+          "taxable_income": 4975000,
+          "total_tax": 1115400
+        }
+      }
+    },
+    {
+      "id": "TAX-0323",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5050001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000000,
+          "total_tax": 1365000
+        },
+        "new": {
+          "taxable_income": 4975000,
+          "total_tax": 1115400
+        }
+      }
+    },
+    {
+      "id": "TAX-0324",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5050010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1365010
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1115400
+        }
+      }
+    },
+    {
+      "id": "TAX-0325",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10049990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 9999990,
+          "total_tax": 3217500
+        },
+        "new": {
+          "taxable_income": 9974990,
+          "total_tax": 2942940
+        }
+      }
+    },
+    {
+      "id": "TAX-0326",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10049999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10000000,
+          "total_tax": 3217500
+        },
+        "new": {
+          "taxable_income": 9975000,
+          "total_tax": 2942940
+        }
+      }
+    },
+    {
+      "id": "TAX-0327",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10050000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10000000,
+          "total_tax": 3217500
+        },
+        "new": {
+          "taxable_income": 9975000,
+          "total_tax": 2942940
+        }
+      }
+    },
+    {
+      "id": "TAX-0328",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10050001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10000000,
+          "total_tax": 3217500
+        },
+        "new": {
+          "taxable_income": 9975000,
+          "total_tax": 2942940
+        }
+      }
+    },
+    {
+      "id": "TAX-0329",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10050010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10000010,
+          "total_tax": 3217510
+        },
+        "new": {
+          "taxable_income": 9975010,
+          "total_tax": 2942940
+        }
+      }
+    },
+    {
+      "id": "TAX-0330",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 20049990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 19999990,
+          "total_tax": 6951750
+        },
+        "new": {
+          "taxable_income": 19974990,
+          "total_tax": 6664710
+        }
+      }
+    },
+    {
+      "id": "TAX-0331",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 20049999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20000000,
+          "total_tax": 6951750
+        },
+        "new": {
+          "taxable_income": 19975000,
+          "total_tax": 6664710
+        }
+      }
+    },
+    {
+      "id": "TAX-0332",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 20050000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20000000,
+          "total_tax": 6951750
+        },
+        "new": {
+          "taxable_income": 19975000,
+          "total_tax": 6664710
+        }
+      }
+    },
+    {
+      "id": "TAX-0333",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 20050001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20000000,
+          "total_tax": 6951750
+        },
+        "new": {
+          "taxable_income": 19975000,
+          "total_tax": 6664710
+        }
+      }
+    },
+    {
+      "id": "TAX-0334",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 20050010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20000010,
+          "total_tax": 6951760
+        },
+        "new": {
+          "taxable_income": 19975010,
+          "total_tax": 6664710
+        }
+      }
+    },
+    {
+      "id": "TAX-0335",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 50049990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 49999990,
+          "total_tax": 19256250
+        },
+        "new": {
+          "taxable_income": 49974990,
+          "total_tax": 18944250
+        }
+      }
+    },
+    {
+      "id": "TAX-0336",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 50049999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50000000,
+          "total_tax": 19256250
+        },
+        "new": {
+          "taxable_income": 49975000,
+          "total_tax": 18944250
+        }
+      }
+    },
+    {
+      "id": "TAX-0337",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 50050000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50000000,
+          "total_tax": 19256250
+        },
+        "new": {
+          "taxable_income": 49975000,
+          "total_tax": 18944250
+        }
+      }
+    },
+    {
+      "id": "TAX-0338",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 50050001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50000000,
+          "total_tax": 19256250
+        },
+        "new": {
+          "taxable_income": 49975000,
+          "total_tax": 18944250
+        }
+      }
+    },
+    {
+      "id": "TAX-0339",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 50050010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50000010,
+          "total_tax": 19256260
+        },
+        "new": {
+          "taxable_income": 49975010,
+          "total_tax": 18944250
+        }
+      }
+    },
+    {
+      "id": "TAX-0340",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 74990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 24990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0341",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 74999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 25000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0342",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 75000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 25000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0343",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 75001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 25000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 0,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0344",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 75010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 25010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 10,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0345",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 324990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 274990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 249990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0346",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 324999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 275000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0347",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 325000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 275000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0348",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 325001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 275000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0349",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 325010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 275010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 250010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0350",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 374990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 324990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 299990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0351",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 374999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 325000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 300000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0352",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 375000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 325000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 300000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0353",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 375001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 325000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 300000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0354",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 375010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 325010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 300010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0355",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 474990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 424990,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 399990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0356",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 474999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 425000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 400000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0357",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 475000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 425000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 400000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0358",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 475001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 425000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 400000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0359",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 475010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 425010,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 400010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0360",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 574990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 524990,
+          "total_tax": 18200
+        },
+        "new": {
+          "taxable_income": 499990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0361",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 574999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 525000,
+          "total_tax": 18200
+        },
+        "new": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0362",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 575000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 525000,
+          "total_tax": 18200
+        },
+        "new": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0363",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 575001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 525000,
+          "total_tax": 18200
+        },
+        "new": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0364",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 575010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 525010,
+          "total_tax": 18200
+        },
+        "new": {
+          "taxable_income": 500010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0365",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 774990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 724990,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 699990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0366",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 774999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0367",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 775000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0368",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 775001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0369",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 775010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725010,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0370",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 874990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 824990,
+          "total_tax": 80600
+        },
+        "new": {
+          "taxable_income": 799990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0371",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 874999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 825000,
+          "total_tax": 80600
+        },
+        "new": {
+          "taxable_income": 800000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0372",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 875000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 825000,
+          "total_tax": 80600
+        },
+        "new": {
+          "taxable_income": 800000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0373",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 875001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 825000,
+          "total_tax": 80600
+        },
+        "new": {
+          "taxable_income": 800000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0374",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 875010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 825010,
+          "total_tax": 80600
+        },
+        "new": {
+          "taxable_income": 800010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0375",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1074990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1024990,
+          "total_tax": 124800
+        },
+        "new": {
+          "taxable_income": 999990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0376",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1074999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1025000,
+          "total_tax": 124800
+        },
+        "new": {
+          "taxable_income": 1000000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0377",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1075000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1025000,
+          "total_tax": 124800
+        },
+        "new": {
+          "taxable_income": 1000000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0378",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1075001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1025000,
+          "total_tax": 124800
+        },
+        "new": {
+          "taxable_income": 1000000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0379",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1075010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1025010,
+          "total_tax": 124800
+        },
+        "new": {
+          "taxable_income": 1000010,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0380",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1274990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1224990,
+          "total_tax": 187200
+        },
+        "new": {
+          "taxable_income": 1199990,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0381",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1274999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1225000,
+          "total_tax": 187200
+        },
+        "new": {
+          "taxable_income": 1200000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0382",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1275000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1225000,
+          "total_tax": 187200
+        },
+        "new": {
+          "taxable_income": 1200000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0383",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1275001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1225000,
+          "total_tax": 187200
+        },
+        "new": {
+          "taxable_income": 1200000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0384",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1275010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1225010,
+          "total_tax": 187200
+        },
+        "new": {
+          "taxable_income": 1200010,
+          "total_tax": 10
+        }
+      }
+    },
+    {
+      "id": "TAX-0385",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1339700
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1289700,
+          "total_tax": 207390
+        },
+        "new": {
+          "taxable_income": 1264700,
+          "total_tax": 67290
+        }
+      }
+    },
+    {
+      "id": "TAX-0386",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1339709
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1289710,
+          "total_tax": 207390
+        },
+        "new": {
+          "taxable_income": 1264710,
+          "total_tax": 67300
+        }
+      }
+    },
+    {
+      "id": "TAX-0387",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1339710
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1289710,
+          "total_tax": 207390
+        },
+        "new": {
+          "taxable_income": 1264710,
+          "total_tax": 67300
+        }
+      }
+    },
+    {
+      "id": "TAX-0388",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1339711
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1289710,
+          "total_tax": 207390
+        },
+        "new": {
+          "taxable_income": 1264710,
+          "total_tax": 67300
+        }
+      }
+    },
+    {
+      "id": "TAX-0389",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1339720
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1289720,
+          "total_tax": 207390
+        },
+        "new": {
+          "taxable_income": 1264720,
+          "total_tax": 67310
+        }
+      }
+    },
+    {
+      "id": "TAX-0390",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1345580
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1295580,
+          "total_tax": 209220
+        },
+        "new": {
+          "taxable_income": 1270580,
+          "total_tax": 73400
+        }
+      }
+    },
+    {
+      "id": "TAX-0391",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1345589
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1295590,
+          "total_tax": 209220
+        },
+        "new": {
+          "taxable_income": 1270590,
+          "total_tax": 73410
+        }
+      }
+    },
+    {
+      "id": "TAX-0392",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1345590
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1295590,
+          "total_tax": 209220
+        },
+        "new": {
+          "taxable_income": 1270590,
+          "total_tax": 73410
+        }
+      }
+    },
+    {
+      "id": "TAX-0393",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1345591
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1295590,
+          "total_tax": 209220
+        },
+        "new": {
+          "taxable_income": 1270590,
+          "total_tax": 73410
+        }
+      }
+    },
+    {
+      "id": "TAX-0394",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1345600
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1295600,
+          "total_tax": 209230
+        },
+        "new": {
+          "taxable_income": 1270600,
+          "total_tax": 73410
+        }
+      }
+    },
+    {
+      "id": "TAX-0395",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1574990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1524990,
+          "total_tax": 280800
+        },
+        "new": {
+          "taxable_income": 1499990,
+          "total_tax": 109200
+        }
+      }
+    },
+    {
+      "id": "TAX-0396",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1574999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1525000,
+          "total_tax": 280800
+        },
+        "new": {
+          "taxable_income": 1500000,
+          "total_tax": 109200
+        }
+      }
+    },
+    {
+      "id": "TAX-0397",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1575000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1525000,
+          "total_tax": 280800
+        },
+        "new": {
+          "taxable_income": 1500000,
+          "total_tax": 109200
+        }
+      }
+    },
+    {
+      "id": "TAX-0398",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1575001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1525000,
+          "total_tax": 280800
+        },
+        "new": {
+          "taxable_income": 1500000,
+          "total_tax": 109200
+        }
+      }
+    },
+    {
+      "id": "TAX-0399",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1575010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1525010,
+          "total_tax": 280800
+        },
+        "new": {
+          "taxable_income": 1500010,
+          "total_tax": 109200
+        }
+      }
+    },
+    {
+      "id": "TAX-0400",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1674990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1624990,
+          "total_tax": 312000
+        },
+        "new": {
+          "taxable_income": 1599990,
+          "total_tax": 124800
+        }
+      }
+    },
+    {
+      "id": "TAX-0401",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1674999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1625000,
+          "total_tax": 312000
+        },
+        "new": {
+          "taxable_income": 1600000,
+          "total_tax": 124800
+        }
+      }
+    },
+    {
+      "id": "TAX-0402",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1675000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1625000,
+          "total_tax": 312000
+        },
+        "new": {
+          "taxable_income": 1600000,
+          "total_tax": 124800
+        }
+      }
+    },
+    {
+      "id": "TAX-0403",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1675001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1625000,
+          "total_tax": 312000
+        },
+        "new": {
+          "taxable_income": 1600000,
+          "total_tax": 124800
+        }
+      }
+    },
+    {
+      "id": "TAX-0404",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1675010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1625010,
+          "total_tax": 312000
+        },
+        "new": {
+          "taxable_income": 1600010,
+          "total_tax": 124800
+        }
+      }
+    },
+    {
+      "id": "TAX-0405",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2074990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2024990,
+          "total_tax": 436800
+        },
+        "new": {
+          "taxable_income": 1999990,
+          "total_tax": 208000
+        }
+      }
+    },
+    {
+      "id": "TAX-0406",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2074999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2025000,
+          "total_tax": 436800
+        },
+        "new": {
+          "taxable_income": 2000000,
+          "total_tax": 208000
+        }
+      }
+    },
+    {
+      "id": "TAX-0407",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2075000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2025000,
+          "total_tax": 436800
+        },
+        "new": {
+          "taxable_income": 2000000,
+          "total_tax": 208000
+        }
+      }
+    },
+    {
+      "id": "TAX-0408",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2075001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2025000,
+          "total_tax": 436800
+        },
+        "new": {
+          "taxable_income": 2000000,
+          "total_tax": 208000
+        }
+      }
+    },
+    {
+      "id": "TAX-0409",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2075010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2025010,
+          "total_tax": 436800
+        },
+        "new": {
+          "taxable_income": 2000010,
+          "total_tax": 208000
+        }
+      }
+    },
+    {
+      "id": "TAX-0410",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2474990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2424990,
+          "total_tax": 561600
+        },
+        "new": {
+          "taxable_income": 2399990,
+          "total_tax": 312000
+        }
+      }
+    },
+    {
+      "id": "TAX-0411",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2474999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2425000,
+          "total_tax": 561600
+        },
+        "new": {
+          "taxable_income": 2400000,
+          "total_tax": 312000
+        }
+      }
+    },
+    {
+      "id": "TAX-0412",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2475000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2425000,
+          "total_tax": 561600
+        },
+        "new": {
+          "taxable_income": 2400000,
+          "total_tax": 312000
+        }
+      }
+    },
+    {
+      "id": "TAX-0413",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2475001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2425000,
+          "total_tax": 561600
+        },
+        "new": {
+          "taxable_income": 2400000,
+          "total_tax": 312000
+        }
+      }
+    },
+    {
+      "id": "TAX-0414",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 2475010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 2425010,
+          "total_tax": 561600
+        },
+        "new": {
+          "taxable_income": 2400010,
+          "total_tax": 312000
+        }
+      }
+    },
+    {
+      "id": "TAX-0415",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5074990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5024990,
+          "total_tax": 1390990
+        },
+        "new": {
+          "taxable_income": 4999990,
+          "total_tax": 1123200
+        }
+      }
+    },
+    {
+      "id": "TAX-0416",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5074999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5025000,
+          "total_tax": 1391000
+        },
+        "new": {
+          "taxable_income": 5000000,
+          "total_tax": 1123200
+        }
+      }
+    },
+    {
+      "id": "TAX-0417",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5075000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5025000,
+          "total_tax": 1391000
+        },
+        "new": {
+          "taxable_income": 5000000,
+          "total_tax": 1123200
+        }
+      }
+    },
+    {
+      "id": "TAX-0418",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5075001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5025000,
+          "total_tax": 1391000
+        },
+        "new": {
+          "taxable_income": 5000000,
+          "total_tax": 1123200
+        }
+      }
+    },
+    {
+      "id": "TAX-0419",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5075010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5025010,
+          "total_tax": 1391010
+        },
+        "new": {
+          "taxable_income": 5000010,
+          "total_tax": 1123210
+        }
+      }
+    },
+    {
+      "id": "TAX-0420",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10074990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10024990,
+          "total_tax": 3243490
+        },
+        "new": {
+          "taxable_income": 9999990,
+          "total_tax": 2951520
+        }
+      }
+    },
+    {
+      "id": "TAX-0421",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10074999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025000,
+          "total_tax": 3243500
+        },
+        "new": {
+          "taxable_income": 10000000,
+          "total_tax": 2951520
+        }
+      }
+    },
+    {
+      "id": "TAX-0422",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10075000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025000,
+          "total_tax": 3243500
+        },
+        "new": {
+          "taxable_income": 10000000,
+          "total_tax": 2951520
+        }
+      }
+    },
+    {
+      "id": "TAX-0423",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10075001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025000,
+          "total_tax": 3243500
+        },
+        "new": {
+          "taxable_income": 10000000,
+          "total_tax": 2951520
+        }
+      }
+    },
+    {
+      "id": "TAX-0424",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10075010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3243510
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 2951530
+        }
+      }
+    },
+    {
+      "id": "TAX-0425",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 20074990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20024990,
+          "total_tax": 6977740
+        },
+        "new": {
+          "taxable_income": 19999990,
+          "total_tax": 6673680
+        }
+      }
+    },
+    {
+      "id": "TAX-0426",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 20074999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20025000,
+          "total_tax": 6977750
+        },
+        "new": {
+          "taxable_income": 20000000,
+          "total_tax": 6673680
+        }
+      }
+    },
+    {
+      "id": "TAX-0427",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 20075000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20025000,
+          "total_tax": 6977750
+        },
+        "new": {
+          "taxable_income": 20000000,
+          "total_tax": 6673680
+        }
+      }
+    },
+    {
+      "id": "TAX-0428",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 20075001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20025000,
+          "total_tax": 6977750
+        },
+        "new": {
+          "taxable_income": 20000000,
+          "total_tax": 6673680
+        }
+      }
+    },
+    {
+      "id": "TAX-0429",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 20075010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 20025010,
+          "total_tax": 6977760
+        },
+        "new": {
+          "taxable_income": 20000010,
+          "total_tax": 6673690
+        }
+      }
+    },
+    {
+      "id": "TAX-0430",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 50074990
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50024990,
+          "total_tax": 19282240
+        },
+        "new": {
+          "taxable_income": 49999990,
+          "total_tax": 18954000
+        }
+      }
+    },
+    {
+      "id": "TAX-0431",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 50074999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50025000,
+          "total_tax": 19282250
+        },
+        "new": {
+          "taxable_income": 50000000,
+          "total_tax": 18954000
+        }
+      }
+    },
+    {
+      "id": "TAX-0432",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 50075000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50025000,
+          "total_tax": 19282250
+        },
+        "new": {
+          "taxable_income": 50000000,
+          "total_tax": 18954000
+        }
+      }
+    },
+    {
+      "id": "TAX-0433",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 50075001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50025000,
+          "total_tax": 19282250
+        },
+        "new": {
+          "taxable_income": 50000000,
+          "total_tax": 18954000
+        }
+      }
+    },
+    {
+      "id": "TAX-0434",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 50075010
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 50025010,
+          "total_tax": 19282260
+        },
+        "new": {
+          "taxable_income": 50000010,
+          "total_tax": 18954000
+        }
+      }
+    },
+    {
+      "id": "TAX-0435",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 300000,
+        "age": 30,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0436",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 550000,
+        "age": 30,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0437",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 775000,
+        "age": 30,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0438",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1285000,
+        "age": 30,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1235000,
+          "total_tax": 190320
+        },
+        "new": {
+          "taxable_income": 1210000,
+          "total_tax": 10400
+        }
+      }
+    },
+    {
+      "id": "TAX-0439",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5050010,
+        "age": 30,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1365010
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1115400
+        }
+      }
+    },
+    {
+      "id": "TAX-0440",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10075010,
+        "age": 30,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3243510
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 2951530
+        }
+      }
+    },
+    {
+      "id": "TAX-0441",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 300000,
+        "age": 30,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0442",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 550000,
+        "age": 30,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 13000
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 3900
+        }
+      }
+    },
+    {
+      "id": "TAX-0443",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 775000,
+        "age": 30,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 15600
+        }
+      }
+    },
+    {
+      "id": "TAX-0444",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1285000,
+        "age": 30,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1235000,
+          "total_tax": 190320
+        },
+        "new": {
+          "taxable_income": 1210000,
+          "total_tax": 63960
+        }
+      }
+    },
+    {
+      "id": "TAX-0445",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5050010,
+        "age": 30,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1365010
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1115400
+        }
+      }
+    },
+    {
+      "id": "TAX-0446",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10075010,
+        "age": 30,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3243510
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 2951530
+        }
+      }
+    },
+    {
+      "id": "TAX-0447",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 300000,
+        "age": 60,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0448",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 550000,
+        "age": 60,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0449",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 775000,
+        "age": 60,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 57200
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0450",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1285000,
+        "age": 60,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1235000,
+          "total_tax": 187720
+        },
+        "new": {
+          "taxable_income": 1210000,
+          "total_tax": 10400
+        }
+      }
+    },
+    {
+      "id": "TAX-0451",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5050010,
+        "age": 60,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1362410
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1115400
+        }
+      }
+    },
+    {
+      "id": "TAX-0452",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10075010,
+        "age": 60,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3240650
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 2951530
+        }
+      }
+    },
+    {
+      "id": "TAX-0453",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 300000,
+        "age": 60,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0454",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 550000,
+        "age": 60,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 13000
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 3900
+        }
+      }
+    },
+    {
+      "id": "TAX-0455",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 775000,
+        "age": 60,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 15600
+        }
+      }
+    },
+    {
+      "id": "TAX-0456",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1285000,
+        "age": 60,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1235000,
+          "total_tax": 190320
+        },
+        "new": {
+          "taxable_income": 1210000,
+          "total_tax": 63960
+        }
+      }
+    },
+    {
+      "id": "TAX-0457",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5050010,
+        "age": 60,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1365010
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1115400
+        }
+      }
+    },
+    {
+      "id": "TAX-0458",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10075010,
+        "age": 60,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3243510
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 2951530
+        }
+      }
+    },
+    {
+      "id": "TAX-0459",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 300000,
+        "age": 80,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0460",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 550000,
+        "age": 80,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0461",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 775000,
+        "age": 80,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 46800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0462",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1285000,
+        "age": 80,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1235000,
+          "total_tax": 177320
+        },
+        "new": {
+          "taxable_income": 1210000,
+          "total_tax": 10400
+        }
+      }
+    },
+    {
+      "id": "TAX-0463",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5050010,
+        "age": 80,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1352010
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1115400
+        }
+      }
+    },
+    {
+      "id": "TAX-0464",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10075010,
+        "age": 80,
+        "resident": true
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3229210
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 2951530
+        }
+      }
+    },
+    {
+      "id": "TAX-0465",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 300000,
+        "age": 80,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 250000,
+          "total_tax": 0
+        },
+        "new": {
+          "taxable_income": 225000,
+          "total_tax": 0
+        }
+      }
+    },
+    {
+      "id": "TAX-0466",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 550000,
+        "age": 80,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 500000,
+          "total_tax": 13000
+        },
+        "new": {
+          "taxable_income": 475000,
+          "total_tax": 3900
+        }
+      }
+    },
+    {
+      "id": "TAX-0467",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 775000,
+        "age": 80,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 725000,
+          "total_tax": 59800
+        },
+        "new": {
+          "taxable_income": 700000,
+          "total_tax": 15600
+        }
+      }
+    },
+    {
+      "id": "TAX-0468",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1285000,
+        "age": 80,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1235000,
+          "total_tax": 190320
+        },
+        "new": {
+          "taxable_income": 1210000,
+          "total_tax": 63960
+        }
+      }
+    },
+    {
+      "id": "TAX-0469",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 5050010,
+        "age": 80,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 5000010,
+          "total_tax": 1365010
+        },
+        "new": {
+          "taxable_income": 4975010,
+          "total_tax": 1115400
+        }
+      }
+    },
+    {
+      "id": "TAX-0470",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 10075010,
+        "age": 80,
+        "resident": false
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 10025010,
+          "total_tax": 3243510
+        },
+        "new": {
+          "taxable_income": 10000010,
+          "total_tax": 2951530
+        }
+      }
+    },
+    {
+      "id": "TAX-0471",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 0,
+        "deduction_80ccd1b": 0,
+        "medical_self_family": 0,
+        "medical_parents": 0,
+        "parents_senior": true,
+        "home_loan_interest": 0
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270000,
+          "total_tax": 201240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0472",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 24999,
+        "deduction_80ccd1b": 24999,
+        "medical_self_family": 24999,
+        "medical_parents": 24999,
+        "parents_senior": true,
+        "home_loan_interest": 24999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1145010,
+          "total_tax": 162240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0473",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 25000,
+        "deduction_80ccd1b": 25000,
+        "medical_self_family": 25000,
+        "medical_parents": 25000,
+        "parents_senior": true,
+        "home_loan_interest": 25000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1145000,
+          "total_tax": 162240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0474",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 25001,
+        "deduction_80ccd1b": 25001,
+        "medical_self_family": 25001,
+        "medical_parents": 25001,
+        "parents_senior": true,
+        "home_loan_interest": 25001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1145000,
+          "total_tax": 162240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0475",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 49999,
+        "deduction_80ccd1b": 49999,
+        "medical_self_family": 49999,
+        "medical_parents": 49999,
+        "parents_senior": true,
+        "home_loan_interest": 49999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1045000,
+          "total_tax": 131040
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0476",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 50000,
+        "deduction_80ccd1b": 50000,
+        "medical_self_family": 50000,
+        "medical_parents": 50000,
+        "parents_senior": true,
+        "home_loan_interest": 50000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1045000,
+          "total_tax": 131040
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0477",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 50001,
+        "deduction_80ccd1b": 50001,
+        "medical_self_family": 50001,
+        "medical_parents": 50001,
+        "parents_senior": true,
+        "home_loan_interest": 50001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1045000,
+          "total_tax": 131040
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0478",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 150000,
+        "deduction_80ccd1b": 150000,
+        "medical_self_family": 150000,
+        "medical_parents": 150000,
+        "parents_senior": true,
+        "home_loan_interest": 150000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 845000,
+          "total_tax": 84760
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0479",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": true,
+        "deduction_80c": 200001,
+        "deduction_80ccd1b": 200001,
+        "medical_self_family": 200001,
+        "medical_parents": 200001,
+        "parents_senior": true,
+        "home_loan_interest": 200001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 795000,
+          "total_tax": 74360
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0480",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 0,
+        "deduction_80ccd1b": 0,
+        "medical_self_family": 0,
+        "medical_parents": 0,
+        "parents_senior": true,
+        "home_loan_interest": 0
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1270000,
+          "total_tax": 201240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0481",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 24999,
+        "deduction_80ccd1b": 24999,
+        "medical_self_family": 24999,
+        "medical_parents": 24999,
+        "parents_senior": true,
+        "home_loan_interest": 24999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1145010,
+          "total_tax": 162240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0482",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 25000,
+        "deduction_80ccd1b": 25000,
+        "medical_self_family": 25000,
+        "medical_parents": 25000,
+        "parents_senior": true,
+        "home_loan_interest": 25000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1145000,
+          "total_tax": 162240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0483",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 25001,
+        "deduction_80ccd1b": 25001,
+        "medical_self_family": 25001,
+        "medical_parents": 25001,
+        "parents_senior": true,
+        "home_loan_interest": 25001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1145000,
+          "total_tax": 162240
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0484",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 49999,
+        "deduction_80ccd1b": 49999,
+        "medical_self_family": 49999,
+        "medical_parents": 49999,
+        "parents_senior": true,
+        "home_loan_interest": 49999
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1045000,
+          "total_tax": 131040
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0485",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 50000,
+        "deduction_80ccd1b": 50000,
+        "medical_self_family": 50000,
+        "medical_parents": 50000,
+        "parents_senior": true,
+        "home_loan_interest": 50000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1045000,
+          "total_tax": 131040
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0486",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 50001,
+        "deduction_80ccd1b": 50001,
+        "medical_self_family": 50001,
+        "medical_parents": 50001,
+        "parents_senior": true,
+        "home_loan_interest": 50001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 1045000,
+          "total_tax": 131040
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0487",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 150000,
+        "deduction_80ccd1b": 150000,
+        "medical_self_family": 150000,
+        "medical_parents": 150000,
+        "parents_senior": true,
+        "home_loan_interest": 150000
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 845000,
+          "total_tax": 84760
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    },
+    {
+      "id": "TAX-0488",
+      "input": {
+        "fiscal_year": "2025-26",
+        "annual_gross_salary": 1500000,
+        "hra_salary": 600000,
+        "hra_received": 300000,
+        "rent_paid": 240000,
+        "metro": false,
+        "deduction_80c": 200001,
+        "deduction_80ccd1b": 200001,
+        "medical_self_family": 200001,
+        "medical_parents": 200001,
+        "parents_senior": true,
+        "home_loan_interest": 200001
+      },
+      "expected": {
+        "old": {
+          "taxable_income": 795000,
+          "total_tax": 74360
+        },
+        "new": {
+          "taxable_income": 1425000,
+          "total_tax": 97500
+        }
+      }
+    }
+  ]
+}

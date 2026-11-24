@@ -1,0 +1,60 @@
+{
+  "retrieved_at": "2026-11-24T03:08:50.595612+00:00",
+  "official_page": "https://eportal.incometax.gov.in/iec/foservices/#/TaxCalc/calculator",
+  "method": "Official downloaded JavaScript executed unmodified in isolated Node.js vm contexts; no browser screenshots or live UI entries are claimed.",
+  "discovery": "eportal HTML references main bundle; main loads bootstrap chunk 5462; bootstrap lazy-loads TaxCalc chunk 9834; TaxCalc computes MD5(app-instance _i) to request tax-calc manifest; manifest selects current itdcalc hashed asset.",
+  "app_instance": "20261112.2047.1015",
+  "official_entry_point": "doCalculation -> ItdCalc.AdvCalc.GetTaxCal",
+  "case_count": 140,
+  "artifacts": [
+    {
+      "file": "eportal.html",
+      "url": "https://eportal.incometax.gov.in/iec/foservices/#/TaxCalc/calculator",
+      "sha256": "c10a6b96774258bf15f91c2c806134f8464e87170d81f92a48176bccee2e76ee",
+      "bytes": 7068,
+      "retained": true
+    },
+    {
+      "file": "main.js",
+      "url": "https://static.incometax.gov.in/iec/foservices/main.66c4d64623fc1771.js",
+      "sha256": "67dd7b7c13d63a3888ef442546d3a2bb0b07d4c3909aa2f95cdcef031444768b",
+      "bytes": 34725,
+      "retained": false
+    },
+    {
+      "file": "bootstrap.js",
+      "url": "https://static.incometax.gov.in/iec/foservices/5462.93a3047335b4edb2.js",
+      "sha256": "071ac83ed69c49c30a63a0b1eaba51df42ab9c74d4933bbaabd6e733d41746c6",
+      "bytes": 4817793,
+      "retained": false
+    },
+    {
+      "file": "calculator.js",
+      "url": "https://static.incometax.gov.in/iec/foservices/9834.896eecc4a3bb051c.js",
+      "sha256": "1041af153d2d3fcf1353b83d5400bd303759b090d9cf8cc5ce692bb7ec2ab651",
+      "bytes": 6093340,
+      "retained": false
+    },
+    {
+      "file": "chunk-map.json",
+      "url": "https://static.incometax.gov.in/iec/foservices/assets/tax-calc.a19313088f66befb.json",
+      "sha256": "8891ea684cca15ff3ec14c897c05552d7c3b387d9dca5e8eb41485a838d181fc",
+      "bytes": 1139,
+      "retained": true
+    },
+    {
+      "file": "itdcalc.js",
+      "url": "https://static.incometax.gov.in/iec/foservices/assets/js/tax-calc/itdcalc.js",
+      "sha256": "aae560aa0b354b614d9a38cb609849508134c2387e76716cbf8dfa1aab94520b",
+      "bytes": 201840,
+      "retained": true
+    },
+    {
+      "file": "itdcalc-current.js",
+      "url": "https://static.incometax.gov.in/iec/foservices/assets/js/tax-calc/chunked/itdcalc.0dd9735f08e2e062.js",
+      "sha256": "09af0ac0dbb891357d4a00b5914f2a92917efbf83a4ca5e1329a23070147bebd",
+      "bytes": 79875,
+      "retained": true
+    }
+  ]
+}

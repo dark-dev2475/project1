@@ -1,0 +1,18 @@
+[
+  {
+    "id": "2024-25-old-50001000",
+    "official_BalTax": 21105280,
+    "expected_project_total": 19257290,
+    "reason": "Pinned official calculator does not effectively apply old-regime surcharge marginal relief at the five-crore boundary for this input. Project follows the published ITD marginal-relief rule.",
+    "manual_derivation": "Tax at 50,000,000 = 14,812,500; with 25% surcharge = 18,515,625. Add income excess 1,000 then 4% cess: 19,257,290.",
+    "source": "https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-3"
+  },
+  {
+    "id": "2025-26-old-50001000",
+    "official_BalTax": 21105280,
+    "expected_project_total": 19257290,
+    "reason": "Pinned official calculator does not effectively apply old-regime surcharge marginal relief at the five-crore boundary for this input. Project follows the published ITD marginal-relief rule.",
+    "manual_derivation": "Tax at 50,000,000 = 14,812,500; with 25% surcharge = 18,515,625. Add income excess 1,000 then 4% cess: 19,257,290.",
+    "source": "https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-3"
+  }
+]

@@ -1,0 +1,3 @@
+{"ticket":1,"opened":"2023-06-01T08:00:00Z","resolved":"2023-06-01T09:00:00Z","priority":"normal","message":"Password reset completed."}
+{"ticket":2,"opened":"2023-06-02T08:00:00Z","resolved":null,"priority":"high","message":"Report export is delayed."}
+{"ticket":3,"opened":"2023-06-02T08:00:00Z","resolved":"2023-06-01T08:00:00Z","priority":"urgent","message":"Contact alex@example.org"}
